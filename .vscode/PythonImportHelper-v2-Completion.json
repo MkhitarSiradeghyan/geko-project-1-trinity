@@ -79,7 +79,7 @@
         "kind": 5,
         "importPath": "back.config.settings.base",
         "description": "back.config.settings.base",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\nSECRET_KEY = config(\"SECRET_KEY\")\nDEBUG = True\nALLOWED_HOSTS = []\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\nSECRET_KEY = config(\"SECRET_KEY\")\nDEBUG = True\nALLOWED_HOSTS = []\nINSTALLED_APPS = [\n    \"unfold\",\n    # Optional modules\n    \"unfold.contrib.filters\",\n    \"unfold.contrib.forms\",\n    \"unfold.contrib.inlines\",",
         "detail": "back.config.settings.base",
         "documentation": {}
     },
@@ -88,7 +88,7 @@
         "kind": 5,
         "importPath": "back.config.settings.base",
         "description": "back.config.settings.base",
-        "peekOfCode": "SECRET_KEY = config(\"SECRET_KEY\")\nDEBUG = True\nALLOWED_HOSTS = []\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",",
+        "peekOfCode": "SECRET_KEY = config(\"SECRET_KEY\")\nDEBUG = True\nALLOWED_HOSTS = []\nINSTALLED_APPS = [\n    \"unfold\",\n    # Optional modules\n    \"unfold.contrib.filters\",\n    \"unfold.contrib.forms\",\n    \"unfold.contrib.inlines\",\n    \"django.contrib.admin\",",
         "detail": "back.config.settings.base",
         "documentation": {}
     },
@@ -97,7 +97,7 @@
         "kind": 5,
         "importPath": "back.config.settings.base",
         "description": "back.config.settings.base",
-        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",\n    \"rest_framework\",",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\nINSTALLED_APPS = [\n    \"unfold\",\n    # Optional modules\n    \"unfold.contrib.filters\",\n    \"unfold.contrib.forms\",\n    \"unfold.contrib.inlines\",\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",",
         "detail": "back.config.settings.base",
         "documentation": {}
     },
@@ -106,7 +106,7 @@
         "kind": 5,
         "importPath": "back.config.settings.base",
         "description": "back.config.settings.base",
-        "peekOfCode": "ALLOWED_HOSTS = []\nINSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",\n    \"rest_framework\",\n    \"corsheaders\",",
+        "peekOfCode": "ALLOWED_HOSTS = []\nINSTALLED_APPS = [\n    \"unfold\",\n    # Optional modules\n    \"unfold.contrib.filters\",\n    \"unfold.contrib.forms\",\n    \"unfold.contrib.inlines\",\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",",
         "detail": "back.config.settings.base",
         "documentation": {}
     },
@@ -115,7 +115,16 @@
         "kind": 5,
         "importPath": "back.config.settings.base",
         "description": "back.config.settings.base",
-        "peekOfCode": "INSTALLED_APPS = [\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",\n    \"django.contrib.staticfiles\",\n    \"rest_framework\",\n    \"corsheaders\",\n]",
+        "peekOfCode": "INSTALLED_APPS = [\n    \"unfold\",\n    # Optional modules\n    \"unfold.contrib.filters\",\n    \"unfold.contrib.forms\",\n    \"unfold.contrib.inlines\",\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",",
+        "detail": "back.config.settings.base",
+        "documentation": {}
+    },
+    {
+        "label": "UNFOLD",
+        "kind": 5,
+        "importPath": "back.config.settings.base",
+        "description": "back.config.settings.base",
+        "peekOfCode": "UNFOLD = {\n    \"SITE_TITLE\": \"Trinity Travel Boutique\",\n    \"SITE_HEADER\": \"Trinity Travel Boutique\",\n    \"COLORS\": {\n        \"primary\": {\n            \"50\": \"250 242 239\",\n            \"100\": \"245 228 221\",\n            \"500\": \"232 180 162\",  # Terracotta / Peach (#E8B4A2)\n            \"600\": \"209 169 110\",  # Warm Sand (#D1A96E)\n            \"900\": \"30 30 30\",     # Dark Slate",
         "detail": "back.config.settings.base",
         "documentation": {}
     },
