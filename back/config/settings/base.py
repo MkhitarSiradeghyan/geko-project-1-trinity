@@ -1,5 +1,6 @@
 from pathlib import Path
 from decouple import config
+from datetime import timedelta
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -8,6 +9,14 @@ SECRET_KEY = config("SECRET_KEY")
 DEBUG = True
 
 ALLOWED_HOSTS = []
+
+REST_FRAMEWORK = {
+
+    "DEFAULT_AUTHENTICATION_CLASSES": (
+        "rest_framework_simplejwt.authentication.JWTAuthentication",
+    ),
+
+}
 
 INSTALLED_APPS = [
     "unfold",
@@ -28,7 +37,24 @@ INSTALLED_APPS = [
     "corsheaders",
 
     "apps.users",
+
+
+    "rest_framework_simplejwt.token_blacklist",
+    # "apps.accounts",
 ]
+
+SIMPLE_JWT = {
+
+    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=30),
+
+    "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
+
+    "ROTATE_REFRESH_TOKENS": True,
+
+    "BLACKLIST_AFTER_ROTATION": True,
+
+}
+
 UNFOLD = {
     "SITE_TITLE": "Trinity Travel Boutique",
     "SITE_HEADER": "Trinity Travel Boutique",
