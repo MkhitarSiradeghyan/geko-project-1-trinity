@@ -17,13 +17,5 @@ class TourSerializer(serializers.ModelSerializer):
 
         if title is not None:
             if title.strip() == "":
-                raise serializers.ValidationError(
-                    {"title": "Title cannot be empty."}
-                )
-            
-        if price is not None:
-            if price <= 0:
-                raise serializers.ValidationError(
-                    {"price": "Price must be greater than 0."}
-                )
+                raise serializers.ValidationError({"title": "Title cannot be empty."} )
         return data
