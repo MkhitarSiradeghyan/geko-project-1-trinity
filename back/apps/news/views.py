@@ -1,38 +1,41 @@
-from django.views.generic import ListView, DetailView
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
+from django.shortcuts import get_object_or_404
 from .models import Article, Category
+from .serializers import ArticleSerializer, CategorySerializer
 
 
-class ArticleListView(ListView):
-    model = Article
-    context_object_name = "articles"
-
-    def get_queryset(self):
-        return (
-            Article.objects.filter(status=Article.PUBLISHED)
-            .select_related("author", "category")
-            .order_by("-published_at")
-        )
-
-
-class ArticleDetailView(DetailView):
-    model = Article
-    context_object_name = "article"
-    slug_field = "slug"
-    slug_url_kwarg = "slug"
-
-    def get_queryset(self):
-        return Article.objects.filter(
-            status=Article.PUBLISHED
-        ).select_related("author", "category")
+@api_view(["GET"])
+def article_list(request):
+    articles = (
+        Article.objects.filter(status=Article.PUBLISHED)
+        .select_related("author", "category")
+        .order_by("-published_at")
+    )
+    serializer = ArticleSerializer(articles, many=True)
+    return Response(serializer.data)
 
 
-class CategoryListView(ListView):
-    model = Category
-    context_object_name = "categories"
+@api_view(["GET"])
+def article_detail(request, slug):
+    article = get_object_or_404(
+        Article.objects.select_related("author", "category"),
+        slug=slug,
+        status=Article.PUBLISHED,
+    )
+    serializer = ArticleSerializer(article)
+    return Response(serializer.data)
 
 
-class CategoryDetailView(DetailView):
-    model = Category
-    context_object_name = "category"
-    slug_field = "slug"
-    slug_url_kwarg = "slug"
+@api_view(["GET"])
+def category_list(request):
+    categories = Category.objects.all()
+    serializer = CategorySerializer(categories, many=True)
+    return Response(serializer.data)
+
+
+@api_view(["GET"])
+def category_detail(request, slug):
+    category = get_object_or_404(Category, slug=slug)
+    serializer = CategorySerializer(category)
+    return Response(serializer.data)
