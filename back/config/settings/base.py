@@ -10,14 +10,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-REST_FRAMEWORK = {
-
-    "DEFAULT_AUTHENTICATION_CLASSES": (
-        "rest_framework_simplejwt.authentication.JWTAuthentication",
-    ),
-
-}
-
 INSTALLED_APPS = [
     "unfold",
 
@@ -25,34 +17,38 @@ INSTALLED_APPS = [
     "unfold.contrib.filters",
     "unfold.contrib.forms",
     "unfold.contrib.inlines",
-    
+
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    
+
     "rest_framework",
     "corsheaders",
 
+    "rest_framework_simplejwt.token_blacklist",
+
     "apps.users",
 
-
-    "rest_framework_simplejwt.token_blacklist",
     # "apps.accounts",
 ]
 
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": (
+        "rest_framework_simplejwt.authentication.JWTAuthentication",
+    ),
+    "DEFAULT_RENDERER_CLASSES": [
+        "rest_framework.renderers.JSONRenderer",
+    ],
+}
+
 SIMPLE_JWT = {
-
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=30),
-
     "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
-
     "ROTATE_REFRESH_TOKENS": True,
-
     "BLACKLIST_AFTER_ROTATION": True,
-
 }
 
 UNFOLD = {
@@ -62,9 +58,9 @@ UNFOLD = {
         "primary": {
             "50": "250 242 239",
             "100": "245 228 221",
-            "500": "232 180 162",  # Terracotta / Peach (#E8B4A2)
-            "600": "209 169 110",  # Warm Sand (#D1A96E)
-            "900": "30 30 30",     # Dark Slate
+            "500": "232 180 162",
+            "600": "209 169 110",
+            "900": "30 30 30",
         },
     },
 }
@@ -93,18 +89,11 @@ TEMPLATES = [
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
             ],
-            
         },
     },
 ]
 
 WSGI_APPLICATION = "config.wsgi.application"
-
-REST_FRAMEWORK = {
-    "DEFAULT_RENDERER_CLASSES": [
-        "rest_framework.renderers.JSONRenderer",
-    ]
-}
 
 DATABASES = {
     "default": {
@@ -116,7 +105,6 @@ DATABASES = {
         "PORT": config("POSTGRES_PORT"),
     }
 }
-
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -145,7 +133,6 @@ STATIC_URL = "static/"
 
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
-
 MEDIA_URL = "media/"
 
 MEDIA_ROOT = BASE_DIR / "media"
@@ -153,4 +140,3 @@ MEDIA_ROOT = BASE_DIR / "media"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 AUTH_USER_MODEL = "users.CustomUser"
-
