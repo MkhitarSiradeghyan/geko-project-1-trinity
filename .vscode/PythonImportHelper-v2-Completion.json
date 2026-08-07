@@ -24,6 +24,30 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -56,6 +80,22 @@
         "documentation": {}
     },
     {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
         "label": "AppConfig",
         "importPath": "django.apps",
         "description": "django.apps",
@@ -81,6 +121,22 @@
     },
     {
         "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
         "importPath": "rest_framework",
         "description": "rest_framework",
         "isExtraImport": true,
@@ -117,6 +173,14 @@
         "description": "rest_framework.test",
         "isExtraImport": true,
         "detail": "rest_framework.test",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
         "documentation": {}
     },
     {
@@ -208,7 +272,47 @@
         "documentation": {}
     },
     {
+        "label": "permission_classes",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "api_view",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
         "label": "IsAdminUser",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "BasePermission",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "SAFE_METHODS",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "IsAuthenticatedOrReadOnly",
         "importPath": "rest_framework.permissions",
         "description": "rest_framework.permissions",
         "isExtraImport": true,
@@ -232,6 +336,23 @@
         "documentation": {}
     },
     {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "django.core.validators",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.core.validators",
+        "description": "django.core.validators",
+        "detail": "django.core.validators",
+        "documentation": {}
+    },
+    {
         "label": "MinValueValidator",
         "importPath": "django.core.validators",
         "description": "django.core.validators",
@@ -240,11 +361,44 @@
         "documentation": {}
     },
     {
-        "label": "Decimal",
-        "importPath": "decimal",
-        "description": "decimal",
+        "label": "MaxValueValidator",
+        "importPath": "django.core.validators",
+        "description": "django.core.validators",
         "isExtraImport": true,
-        "detail": "decimal",
+        "detail": "django.core.validators",
+        "documentation": {}
+    },
+    {
+        "label": "MinValueValidator",
+        "importPath": "django.core.validators",
+        "description": "django.core.validators",
+        "isExtraImport": true,
+        "detail": "django.core.validators",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
         "documentation": {}
     },
     {
@@ -253,6 +407,38 @@
         "description": "django.test",
         "isExtraImport": true,
         "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "Avg",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "Count",
+        "importPath": "django.db.models",
+        "description": "django.db.models",
+        "isExtraImport": true,
+        "detail": "django.db.models",
+        "documentation": {}
+    },
+    {
+        "label": "Decimal",
+        "importPath": "decimal",
+        "description": "decimal",
+        "isExtraImport": true,
+        "detail": "decimal",
         "documentation": {}
     },
     {
@@ -393,6 +579,96 @@
         "description": "back.apps.contacts.views",
         "peekOfCode": "def contact_detail(request, pk):\n    submission = get_object_or_404(ContactSubmission, pk=pk)\n    if request.method == \"GET\":\n        serializer = ContactSubmissionSerializer(submission)\n        return Response(serializer.data)\n    if request.method == \"PUT\":\n        serializer = ContactSubmissionSerializer(submission, data=request.data, partial=True)\n        serializer.is_valid(raise_exception=True)\n        serializer.save()\n        return Response(serializer.data)",
         "detail": "back.apps.contacts.views",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "back.apps.reviews.migrations.0001_initial",
+        "description": "back.apps.reviews.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Tour',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "back.apps.reviews.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "ReviewsConfig",
+        "kind": 6,
+        "importPath": "back.apps.reviews.apps",
+        "description": "back.apps.reviews.apps",
+        "peekOfCode": "class ReviewsConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'apps.reviews'",
+        "detail": "back.apps.reviews.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Tour",
+        "kind": 6,
+        "importPath": "back.apps.reviews.models",
+        "description": "back.apps.reviews.models",
+        "peekOfCode": "class Tour(models.Model):\n    title = models.CharField(max_length=200)\n    description = models.TextField()\n    def __str__(self):\n        return self.title\nclass Review(models.Model):\n    user = models.ForeignKey(\n        User,\n        on_delete=models.CASCADE,\n        related_name=\"reviews\"",
+        "detail": "back.apps.reviews.models",
+        "documentation": {}
+    },
+    {
+        "label": "Review",
+        "kind": 6,
+        "importPath": "back.apps.reviews.models",
+        "description": "back.apps.reviews.models",
+        "peekOfCode": "class Review(models.Model):\n    user = models.ForeignKey(\n        User,\n        on_delete=models.CASCADE,\n        related_name=\"reviews\"\n    )\n    tour = models.ForeignKey(\n        Tour,\n        on_delete=models.CASCADE,\n        related_name=\"reviews\"",
+        "detail": "back.apps.reviews.models",
+        "documentation": {}
+    },
+    {
+        "label": "IsOwnerOrReadOnly",
+        "kind": 6,
+        "importPath": "back.apps.reviews.permissions",
+        "description": "back.apps.reviews.permissions",
+        "peekOfCode": "class IsOwnerOrReadOnly(BasePermission):\n    def has_object_permission(\n            self,\n            request,\n            view,\n            obj\n    ):\n        if request.method in SAFE_METHODS:\n            return True\n        return obj.user == request.user",
+        "detail": "back.apps.reviews.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "ReviewSerializer",
+        "kind": 6,
+        "importPath": "back.apps.reviews.serializers",
+        "description": "back.apps.reviews.serializers",
+        "peekOfCode": "class ReviewSerializer(serializers.ModelSerializer):\n    user = serializers.ReadOnlyField(source=\"user.username\")\n    class Meta:\n        model = Review\n        fields = [\n            \"id\",\n            \"user\",\n            \"tour\",\n            \"rating\",\n            \"comment\",",
+        "detail": "back.apps.reviews.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "back.apps.reviews.urls",
+        "description": "back.apps.reviews.urls",
+        "peekOfCode": "urlpatterns = [\n    path(\n        \"\",\n        views.review_list_create\n    ),\n    path(\n        \"<int:pk>/\",\n        views.review_detail\n    ),\n    path(",
+        "detail": "back.apps.reviews.urls",
+        "documentation": {}
+    },
+    {
+        "label": "review_list_create",
+        "kind": 2,
+        "importPath": "back.apps.reviews.views",
+        "description": "back.apps.reviews.views",
+        "peekOfCode": "def review_list_create(request):\n    if request.method == \"GET\":\n        reviews = Review.objects.all()\n        tour = request.GET.get(\"tour\")\n        rating = request.GET.get(\"rating\")\n        if tour:\n            reviews = reviews.filter(\n                tour=tour\n            )\n        if rating:",
+        "detail": "back.apps.reviews.views",
+        "documentation": {}
+    },
+    {
+        "label": "review_detail",
+        "kind": 2,
+        "importPath": "back.apps.reviews.views",
+        "description": "back.apps.reviews.views",
+        "peekOfCode": "def review_detail(request, pk):\n    try:\n        review = Review.objects.get(\n            id=pk\n        )\n    except Review.DoesNotExist:\n        return Response(\n            status=status.HTTP_404_NOT_FOUND\n        )\n    if request.method == \"GET\":",
+        "detail": "back.apps.reviews.views",
+        "documentation": {}
+    },
+    {
+        "label": "review_statistics",
+        "kind": 2,
+        "importPath": "back.apps.reviews.views",
+        "description": "back.apps.reviews.views",
+        "peekOfCode": "def review_statistics(request):\n    tour = request.GET.get(\"tour\")\n    reviews = Review.objects.filter(\n        tour=tour\n    )\n    average = reviews.aggregate(\n        avg=Avg(\"rating\")\n    )\n    breakdown = reviews.values(\n        \"rating\"",
+        "detail": "back.apps.reviews.views",
         "documentation": {}
     },
     {
@@ -652,7 +928,7 @@
         "kind": 5,
         "importPath": "back.config.urls",
         "description": "back.config.urls",
-        "peekOfCode": "urlpatterns = [\n    path(\"admin/\", admin.site.urls),\n    path(\"api/contacts/\", include(\"apps.contacts.urls\")),\n    path(\"api/tours/\",include(\"apps.tours.urls\")),\n]",
+        "peekOfCode": "urlpatterns = [\n    path(\"admin/\", admin.site.urls),\n    path(\"api/contacts/\", include(\"apps.contacts.urls\")),\n    path(\"api/tours/\",include(\"apps.tours.urls\")),\n    path(\"api/reviews/\", include(\"apps.reviews.urls\")),\n]",
         "detail": "back.config.urls",
         "documentation": {}
     },

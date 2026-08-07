@@ -24,6 +24,7 @@ INSTALLED_APPS = [
     "corsheaders",
     "apps.contacts",
     "apps.tours",
+    "apps.reviews",
 ]
 UNFOLD = {
     "SITE_TITLE": "Trinity Travel Boutique",
