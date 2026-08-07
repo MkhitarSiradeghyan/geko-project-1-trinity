@@ -11,22 +11,19 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     "unfold",
-
-    # Optional modules
     "unfold.contrib.filters",
     "unfold.contrib.forms",
     "unfold.contrib.inlines",
-    
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    
     "rest_framework",
     "corsheaders",
-    'apps.tours',
+    "apps.contacts",
+    "apps.tours",
 ]
 UNFOLD = {
     "SITE_TITLE": "Trinity Travel Boutique",
@@ -37,7 +34,7 @@ UNFOLD = {
             "100": "245 228 221",
             "500": "232 180 162",  # Terracotta / Peach (#E8B4A2)
             "600": "209 169 110",  # Warm Sand (#D1A96E)
-            "900": "30 30 30",     # Dark Slate
+            "900": "30 30 30",  # Dark Slate
         },
     },
 }
@@ -66,7 +63,6 @@ TEMPLATES = [
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
             ],
-            
         },
     },
 ]

@@ -1,5 +1,45 @@
 [
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
         "label": "admin",
         "importPath": "django.contrib",
         "description": "django.contrib",
@@ -24,27 +64,11 @@
         "documentation": {}
     },
     {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
         "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "MinValueValidator",
-        "importPath": "django.core.validators",
-        "description": "django.core.validators",
-        "isExtraImport": true,
-        "detail": "django.core.validators",
-        "documentation": {}
-    },
-    {
-        "label": "Decimal",
-        "importPath": "decimal",
-        "description": "decimal",
-        "isExtraImport": true,
-        "detail": "decimal",
+        "detail": "django.apps",
         "documentation": {}
     },
     {
@@ -64,11 +88,43 @@
         "documentation": {}
     },
     {
-        "label": "TestCase",
-        "importPath": "django.test",
-        "description": "django.test",
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
         "isExtraImport": true,
-        "detail": "django.test",
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "APITestCase",
+        "importPath": "rest_framework.test",
+        "description": "rest_framework.test",
+        "isExtraImport": true,
+        "detail": "rest_framework.test",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
         "documentation": {}
     },
     {
@@ -96,6 +152,30 @@
         "documentation": {}
     },
     {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
         "label": "render",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
@@ -112,11 +192,67 @@
         "documentation": {}
     },
     {
+        "label": "permission_classes",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "api_view",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "IsAdminUser",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
         "label": "Response",
         "importPath": "rest_framework.response",
         "description": "rest_framework.response",
         "isExtraImport": true,
         "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "MinValueValidator",
+        "importPath": "django.core.validators",
+        "description": "django.core.validators",
+        "isExtraImport": true,
+        "detail": "django.core.validators",
+        "documentation": {}
+    },
+    {
+        "label": "Decimal",
+        "importPath": "decimal",
+        "description": "decimal",
+        "isExtraImport": true,
+        "detail": "decimal",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
         "documentation": {}
     },
     {
@@ -179,6 +315,87 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "back.apps.contacts.migrations.0001_initial",
+        "description": "back.apps.contacts.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='ContactSubmission',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),\n                ('email', models.EmailField(blank=True, max_length=254, null=True)),",
+        "detail": "back.apps.contacts.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "ContactSubmissionAdmin",
+        "kind": 6,
+        "importPath": "back.apps.contacts.admin",
+        "description": "back.apps.contacts.admin",
+        "peekOfCode": "class ContactSubmissionAdmin(admin.ModelAdmin):\n    list_display = (\"id\", \"name\", \"email\", \"phone\", \"created_at\", \"is_processed\")\n    list_filter = (\"is_processed\", \"created_at\")\n    search_fields = (\"name\", \"email\", \"phone\")\n    readonly_fields = (\"created_at\",)",
+        "detail": "back.apps.contacts.admin",
+        "documentation": {}
+    },
+    {
+        "label": "ContactsConfig",
+        "kind": 6,
+        "importPath": "back.apps.contacts.apps",
+        "description": "back.apps.contacts.apps",
+        "peekOfCode": "class ContactsConfig(AppConfig):\n    name = \"apps.contacts\"",
+        "detail": "back.apps.contacts.apps",
+        "documentation": {}
+    },
+    {
+        "label": "ContactSubmission",
+        "kind": 6,
+        "importPath": "back.apps.contacts.models",
+        "description": "back.apps.contacts.models",
+        "peekOfCode": "class ContactSubmission(models.Model):\n    email = models.EmailField(blank=True, null=True)\n    phone = models.CharField(max_length=20, blank=True, null=True)\n    name = models.CharField(max_length=100, blank=True, null=True)\n    message = models.TextField(blank=True, null=True)\n    created_at = models.DateTimeField(auto_now_add=True)\n    is_processed = models.BooleanField(default=False)",
+        "detail": "back.apps.contacts.models",
+        "documentation": {}
+    },
+    {
+        "label": "ContactSubmissionSerializer",
+        "kind": 6,
+        "importPath": "back.apps.contacts.serializers",
+        "description": "back.apps.contacts.serializers",
+        "peekOfCode": "class ContactSubmissionSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = ContactSubmission\n        fields = [\"id\", \"name\", \"email\", \"phone\", \"message\", \"created_at\"]\n    def validate(self, data):\n        email = data.get(\"email\")\n        phone = data.get(\"phone\")\n        if not email and not phone:\n            raise serializers.ValidationError(\n                \"You must provide at least an email or a phone number.\"",
+        "detail": "back.apps.contacts.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "ContactSubmissionTests",
+        "kind": 6,
+        "importPath": "back.apps.contacts.tests",
+        "description": "back.apps.contacts.tests",
+        "peekOfCode": "class ContactSubmissionTests(APITestCase):\n    url = \"/api/contacts/\"\n    def test_submission_with_email_only(self):\n        response = self.client.post(self.url, {\"email\": \"test@example.com\"})\n        self.assertEqual(response.status_code, status.HTTP_201_CREATED)\n    def test_submission_with_phone_only(self):\n        response = self.client.post(self.url, {\"phone\": \"+37412345678\"})\n        self.assertEqual(response.status_code, status.HTTP_201_CREATED)\n    def test_submission_with_both(self):\n        response = self.client.post(self.url, {",
+        "detail": "back.apps.contacts.tests",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "back.apps.contacts.urls",
+        "description": "back.apps.contacts.urls",
+        "peekOfCode": "urlpatterns = [\n    path(\"\", views.contact_list, name=\"contact-list\"),\n    path(\"<int:pk>/\", views.contact_detail, name=\"contact-detail\"),\n]",
+        "detail": "back.apps.contacts.urls",
+        "documentation": {}
+    },
+    {
+        "label": "contact_list",
+        "kind": 2,
+        "importPath": "back.apps.contacts.views",
+        "description": "back.apps.contacts.views",
+        "peekOfCode": "def contact_list(request):\n    if request.method == \"POST\":\n        serializer = ContactSubmissionSerializer(data=request.data)\n        serializer.is_valid(raise_exception=True)\n        serializer.save()\n        return Response(serializer.data, status=status.HTTP_201_CREATED)\n    # GET -> admin only\n    if not IsAdminUser().has_permission(request, None):\n        return Response(status=status.HTTP_403_FORBIDDEN)\n    submissions = ContactSubmission.objects.all().order_by(\"-created_at\")",
+        "detail": "back.apps.contacts.views",
+        "documentation": {}
+    },
+    {
+        "label": "contact_detail",
+        "kind": 2,
+        "importPath": "back.apps.contacts.views",
+        "description": "back.apps.contacts.views",
+        "peekOfCode": "def contact_detail(request, pk):\n    submission = get_object_or_404(ContactSubmission, pk=pk)\n    if request.method == \"GET\":\n        serializer = ContactSubmissionSerializer(submission)\n        return Response(serializer.data)\n    if request.method == \"PUT\":\n        serializer = ContactSubmissionSerializer(submission, data=request.data, partial=True)\n        serializer.is_valid(raise_exception=True)\n        serializer.save()\n        return Response(serializer.data)",
+        "detail": "back.apps.contacts.views",
+        "documentation": {}
+    },
+    {
         "label": "ToursConfig",
         "kind": 6,
         "importPath": "back.apps.tours.apps",
@@ -237,7 +454,7 @@
         "kind": 5,
         "importPath": "back.config.settings.base",
         "description": "back.config.settings.base",
-        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\nSECRET_KEY = config(\"SECRET_KEY\")\nDEBUG = True\nALLOWED_HOSTS = []\nINSTALLED_APPS = [\n    \"unfold\",\n    # Optional modules\n    \"unfold.contrib.filters\",\n    \"unfold.contrib.forms\",\n    \"unfold.contrib.inlines\",",
+        "peekOfCode": "BASE_DIR = Path(__file__).resolve().parent.parent\nSECRET_KEY = config(\"SECRET_KEY\")\nDEBUG = True\nALLOWED_HOSTS = []\nINSTALLED_APPS = [\n    \"unfold\",\n    \"unfold.contrib.filters\",\n    \"unfold.contrib.forms\",\n    \"unfold.contrib.inlines\",\n    \"django.contrib.admin\",",
         "detail": "back.config.settings.base",
         "documentation": {}
     },
@@ -246,7 +463,7 @@
         "kind": 5,
         "importPath": "back.config.settings.base",
         "description": "back.config.settings.base",
-        "peekOfCode": "SECRET_KEY = config(\"SECRET_KEY\")\nDEBUG = True\nALLOWED_HOSTS = []\nINSTALLED_APPS = [\n    \"unfold\",\n    # Optional modules\n    \"unfold.contrib.filters\",\n    \"unfold.contrib.forms\",\n    \"unfold.contrib.inlines\",\n    \"django.contrib.admin\",",
+        "peekOfCode": "SECRET_KEY = config(\"SECRET_KEY\")\nDEBUG = True\nALLOWED_HOSTS = []\nINSTALLED_APPS = [\n    \"unfold\",\n    \"unfold.contrib.filters\",\n    \"unfold.contrib.forms\",\n    \"unfold.contrib.inlines\",\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",",
         "detail": "back.config.settings.base",
         "documentation": {}
     },
@@ -255,7 +472,7 @@
         "kind": 5,
         "importPath": "back.config.settings.base",
         "description": "back.config.settings.base",
-        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\nINSTALLED_APPS = [\n    \"unfold\",\n    # Optional modules\n    \"unfold.contrib.filters\",\n    \"unfold.contrib.forms\",\n    \"unfold.contrib.inlines\",\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",",
+        "peekOfCode": "DEBUG = True\nALLOWED_HOSTS = []\nINSTALLED_APPS = [\n    \"unfold\",\n    \"unfold.contrib.filters\",\n    \"unfold.contrib.forms\",\n    \"unfold.contrib.inlines\",\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",",
         "detail": "back.config.settings.base",
         "documentation": {}
     },
@@ -264,7 +481,7 @@
         "kind": 5,
         "importPath": "back.config.settings.base",
         "description": "back.config.settings.base",
-        "peekOfCode": "ALLOWED_HOSTS = []\nINSTALLED_APPS = [\n    \"unfold\",\n    # Optional modules\n    \"unfold.contrib.filters\",\n    \"unfold.contrib.forms\",\n    \"unfold.contrib.inlines\",\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",",
+        "peekOfCode": "ALLOWED_HOSTS = []\nINSTALLED_APPS = [\n    \"unfold\",\n    \"unfold.contrib.filters\",\n    \"unfold.contrib.forms\",\n    \"unfold.contrib.inlines\",\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",",
         "detail": "back.config.settings.base",
         "documentation": {}
     },
@@ -273,7 +490,7 @@
         "kind": 5,
         "importPath": "back.config.settings.base",
         "description": "back.config.settings.base",
-        "peekOfCode": "INSTALLED_APPS = [\n    \"unfold\",\n    # Optional modules\n    \"unfold.contrib.filters\",\n    \"unfold.contrib.forms\",\n    \"unfold.contrib.inlines\",\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",",
+        "peekOfCode": "INSTALLED_APPS = [\n    \"unfold\",\n    \"unfold.contrib.filters\",\n    \"unfold.contrib.forms\",\n    \"unfold.contrib.inlines\",\n    \"django.contrib.admin\",\n    \"django.contrib.auth\",\n    \"django.contrib.contenttypes\",\n    \"django.contrib.sessions\",\n    \"django.contrib.messages\",",
         "detail": "back.config.settings.base",
         "documentation": {}
     },
@@ -282,7 +499,7 @@
         "kind": 5,
         "importPath": "back.config.settings.base",
         "description": "back.config.settings.base",
-        "peekOfCode": "UNFOLD = {\n    \"SITE_TITLE\": \"Trinity Travel Boutique\",\n    \"SITE_HEADER\": \"Trinity Travel Boutique\",\n    \"COLORS\": {\n        \"primary\": {\n            \"50\": \"250 242 239\",\n            \"100\": \"245 228 221\",\n            \"500\": \"232 180 162\",  # Terracotta / Peach (#E8B4A2)\n            \"600\": \"209 169 110\",  # Warm Sand (#D1A96E)\n            \"900\": \"30 30 30\",     # Dark Slate",
+        "peekOfCode": "UNFOLD = {\n    \"SITE_TITLE\": \"Trinity Travel Boutique\",\n    \"SITE_HEADER\": \"Trinity Travel Boutique\",\n    \"COLORS\": {\n        \"primary\": {\n            \"50\": \"250 242 239\",\n            \"100\": \"245 228 221\",\n            \"500\": \"232 180 162\",  # Terracotta / Peach (#E8B4A2)\n            \"600\": \"209 169 110\",  # Warm Sand (#D1A96E)\n            \"900\": \"30 30 30\",  # Dark Slate",
         "detail": "back.config.settings.base",
         "documentation": {}
     },
@@ -435,7 +652,7 @@
         "kind": 5,
         "importPath": "back.config.urls",
         "description": "back.config.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path(\"api/tours/\",include(\"apps.tours.urls\")),\n]",
+        "peekOfCode": "urlpatterns = [\n    path(\"admin/\", admin.site.urls),\n    path(\"api/contacts/\", include(\"apps.contacts.urls\")),\n    path(\"api/tours/\",include(\"apps.tours.urls\")),\n]",
         "detail": "back.config.urls",
         "documentation": {}
     },
