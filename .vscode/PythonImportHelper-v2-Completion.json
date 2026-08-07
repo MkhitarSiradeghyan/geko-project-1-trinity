@@ -1,5 +1,125 @@
 [
     {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "MinValueValidator",
+        "importPath": "django.core.validators",
+        "description": "django.core.validators",
+        "isExtraImport": true,
+        "detail": "django.core.validators",
+        "documentation": {}
+    },
+    {
+        "label": "Decimal",
+        "importPath": "decimal",
+        "description": "decimal",
+        "isExtraImport": true,
+        "detail": "decimal",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "api_view",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
         "label": "Path",
         "importPath": "pathlib",
         "description": "pathlib",
@@ -33,22 +153,6 @@
         "documentation": {}
     },
     {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "path",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
-        "documentation": {}
-    },
-    {
         "label": "get_wsgi_application",
         "importPath": "django.core.wsgi",
         "description": "django.core.wsgi",
@@ -72,6 +176,60 @@
         "importPath": "json",
         "description": "json",
         "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "ToursConfig",
+        "kind": 6,
+        "importPath": "back.apps.tours.apps",
+        "description": "back.apps.tours.apps",
+        "peekOfCode": "class ToursConfig(AppConfig):\n    name = 'apps.tours'",
+        "detail": "back.apps.tours.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Tour",
+        "kind": 6,
+        "importPath": "back.apps.tours.models",
+        "description": "back.apps.tours.models",
+        "peekOfCode": "class Tour(models.Model):\n    title = models.CharField(max_length=150,null=False,blank=False)\n    price = models.DecimalField(max_digits=10,decimal_places=2,validators=[MinValueValidator(Decimal(\"0.01\"))])\n    created_at = models.DateTimeField(auto_now_add=True)\n    updated_at = models.DateTimeField(auto_now=True)\n    def __str__(self):\n        return self.title",
+        "detail": "back.apps.tours.models",
+        "documentation": {}
+    },
+    {
+        "label": "TourSerializer",
+        "kind": 6,
+        "importPath": "back.apps.tours.serializers",
+        "description": "back.apps.tours.serializers",
+        "peekOfCode": "class TourSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Tour\n        fields = [\n            \"id\",\n            \"title\",\n            \"price\",\n            \"created_at\"\n        ]\n    def validate(self, data):",
+        "detail": "back.apps.tours.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "back.apps.tours.urls",
+        "description": "back.apps.tours.urls",
+        "peekOfCode": "urlpatterns = [\n    path(\"\", views.tours_list, name=\"tours-list\"),\n    path(\"<int:id>/\", views.tour_detail, name=\"tour-detail\"),\n]",
+        "detail": "back.apps.tours.urls",
+        "documentation": {}
+    },
+    {
+        "label": "tours_list",
+        "kind": 2,
+        "importPath": "back.apps.tours.views",
+        "description": "back.apps.tours.views",
+        "peekOfCode": "def tours_list(request):\n    if request.method == \"GET\":\n        tours = Tour.objects.all()\n        serializer = TourSerializer(tours,many=True)\n        return Response(serializer.data,status=status.HTTP_200_OK)\n    elif request.method == \"POST\":\n        serializer = TourSerializer(data=request.data)\n        if serializer.is_valid():\n            serializer.save()\n            return Response(serializer.data,status=status.HTTP_201_CREATED)",
+        "detail": "back.apps.tours.views",
+        "documentation": {}
+    },
+    {
+        "label": "tour_detail",
+        "kind": 2,
+        "importPath": "back.apps.tours.views",
+        "description": "back.apps.tours.views",
+        "peekOfCode": "def tour_detail(request, id):\n    try:\n        tour = Tour.objects.get(id=id)\n    except Tour.DoesNotExist:\n        return Response({\"error\": \"Tour not found\"},status=status.HTTP_404_NOT_FOUND)\n    if request.method == \"GET\":\n        serializer = TourSerializer(tour)\n        return Response(serializer.data,status=status.HTTP_200_OK)\n    elif request.method == \"PUT\":\n        serializer = TourSerializer(tour,data=request.data)",
+        "detail": "back.apps.tours.views",
         "documentation": {}
     },
     {
@@ -277,7 +435,7 @@
         "kind": 5,
         "importPath": "back.config.urls",
         "description": "back.config.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path(\"api/tours/\",include(\"apps.tours.urls\")),\n]",
         "detail": "back.config.urls",
         "documentation": {}
     },
