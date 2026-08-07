@@ -1,5 +1,8 @@
-from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from .views import ArticleViewSet, CategoryViewSet
 
-urlpatterns = [
-    path("", include("news.urls")),
-]
+router = DefaultRouter()
+router.register("categories", CategoryViewSet, basename="category")
+router.register("news", ArticleViewSet, basename="article")
+
+urlpatterns = router.urls

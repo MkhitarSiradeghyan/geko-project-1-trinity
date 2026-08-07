@@ -1,5 +1,3 @@
-from django.shortcuts import render
-from .models import Product
 from django.views.generic import ListView, DetailView
 from .models import Article, Category
 

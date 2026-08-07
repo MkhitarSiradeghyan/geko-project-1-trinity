@@ -1,88 +1,54 @@
+from django.conf import settings
 from django.db import models
-
-from django.db import models
-from django.contrib.auth import get_user_model
-
-
-User = get_user_model()
-
 class Category(models.Model):
+    name = models.CharField(max_length=100, unique=True)
+    slug = models.SlugField(unique=True)
 
-    name = models.CharField(
-        max_length=100,
-        unique=True
-    )
+    class Meta:
+        verbose_name_plural = "Categories"
+        ordering = ["name"]
 
-    slug = models.SlugField(
-        unique=True
-    )
-
-    def __str__(self):
-        return self.name
+        def __str__(self):
+            return self.name
 
 class Article(models.Model):
+    class Status(models.TextChoices):
+        DRAFT = "DRAFT", "Draft"
+        PUBLISHED = "PUBLISHED", "Published"
+        ARCHIVED = "ARCHIVED", "Archived"
 
-    DRAFT = "DRAFT"
-    PUBLISHED = "PUBLISHED"
-    ARCHIVED = "ARCHIVED"
-
-    STATUS_CHOICES = [
-        (DRAFT, "Draft"),
-        (PUBLISHED, "Published"),
-        (ARCHIVED, "Archived"),
-    ]
-
-    title = models.CharField(
-        max_length=255
-    )
-
-
-    slug = models.SlugField(
-        unique=True
-    )
-
+    title = models.CharField(max_length=255)
+    slug = models.SlugField(unique=True)
     content = models.TextField()
-
-    summary = models.TextField(
-        max_length=500,
-        blank=True
-    )
-
+    summary = models.TextField(max_length=500, blank=True)
     cover_image = models.ImageField(
-        upload_to="news/covers/%Y/%m/",
-        null=True,
-        blank=True
+        upload_to="news/covers/%Y/%m/", null=True, blank=True
     )
-
     author = models.ForeignKey(
-        User,
-        on_delete=models.CASCADE
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        related_name="articles",
     )
-
     category = models.ForeignKey(
         Category,
+        on_delete=models.CASCADE,
         related_name="articles",
-        on_delete=models.CASCADE
     )
+    status = models.CharField(
+        max_length=10, choices=Status.choices, default=Status.DRAFT
+    )
+    published_at = models.DateTimeField(null=True, blank=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
-    status = models.CharField (
-        max_length=20,
-        choices=STATUS_CHOICES,
-        default=DRAFT
-    )
+    class Meta:
+        ordering = ["-published_at", "-created_at"]
 
-    published_at = models.DateTimeField (
-        null=True,
-        blank=True
-    )
+    def __str__(self):
+        return self.title
 
-    created_at = models.DateTimeField (
-        auto_now_add=True
-    )
-
-    updated_at = models.DateTimeField (
-        auto_now = True
-    )
+class Meta:
+    ordering = ["-published_at", "-created_at"]
 
     def __str__(self):
         return self.title

@@ -23,10 +23,11 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "apps.news",
     
     "rest_framework",
+    "django_filters",
     "corsheaders",
+    "apps.news",
 ]
 UNFOLD = {
     "SITE_TITLE": "Trinity Travel Boutique",
