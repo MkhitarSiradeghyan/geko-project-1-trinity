@@ -386,34 +386,437 @@ User Action → Component → Feature Logic → Service → External Data → St
 
 ---
 
-## 🔌 Future Backend Integration
+## 🐍 Backend Architecture
 
-The repository contains a reserved backend directory:
+The backend is built with:
+
+- Python
+- Django
+- Django REST Framework
+- PostgreSQL
+
+The backend follows a modular architecture where every application is placed inside the `apps/` directory.
+
+---
+
+## 📁 Backend Structure
 
 ```
 back/
+├── apps/
+│   ├── users/
+│   ├── tours/
+│   ├── bookings/
+│   └── ...
+│
+├── config/
+│   ├── settings/
+│   │   ├── base.py
+│   │   ├── dev.py
+│   │   └── prod.py
+│   │
+│   ├── urls.py
+│   ├── asgi.py
+│   └── wsgi.py
+│
+├── requirements.txt
+├── .env
+├── .env.example
+├── manage.py
+└── venv/
 ```
 
-Future backend communication will be connected through:
+---
+
+# 📂 Folder Responsibilities
+
+## apps/
+
+All Django applications are stored inside the `apps/` directory.
+
+Example:
 
 ```
-services/
+apps/
+├── users/
+├── tours/
+├── bookings/
+└── reviews/
 ```
 
-Frontend responsibilities:
+Each application is responsible for a single business domain.
 
-- display data;
-- handle user interaction;
-- send requests;
-- manage UI state.
+Examples:
 
-Backend responsibilities in future:
+- `users` → authentication and user management
+- `tours` → tour management
+- `bookings` → reservations
+- `reviews` → customer reviews
 
-- database;
-- authentication;
-- business logic;
-- API.
+---
 
+## config/
+
+The `config/` directory is the main Django project configuration.
+
+```
+config/
+├── settings/
+├── urls.py
+├── asgi.py
+└── wsgi.py
+```
+
+---
+
+## settings/
+
+Project settings are separated by environment.
+
+```
+config/
+└── settings/
+    ├── base.py
+    ├── dev.py
+    └── prod.py
+```
+
+### base.py
+
+Contains common project configuration shared across all environments.
+
+Examples:
+
+- INSTALLED_APPS
+- Middleware
+- REST Framework
+- Database configuration
+- Static & Media files
+- Authentication
+- Internationalization
+
+### dev.py
+
+Contains development configuration.
+
+Examples:
+
+- DEBUG=True
+- Local PostgreSQL database
+- Development-specific settings
+
+### prod.py
+
+Contains production configuration.
+
+Examples:
+
+- DEBUG=False
+- Security settings
+- Production database
+- Logging
+
+---
+
+# 📦 Installed Apps
+
+All local Django applications must be registered using the `apps.` prefix.
+
+Example:
+
+```python
+INSTALLED_APPS = [
+    "django.contrib.admin",
+    "django.contrib.auth",
+    "django.contrib.contenttypes",
+    "django.contrib.sessions",
+    "django.contrib.messages",
+    "django.contrib.staticfiles",
+
+    "rest_framework",
+
+    "apps.users",
+    "apps.tours",
+    "apps.bookings",
+]
+```
+
+Keeping every project application inside `apps/` makes the project easier to navigate and maintain.
+
+---
+
+# 🌱 Environment Variables
+
+Sensitive configuration must never be committed to GitHub.
+
+The project uses:
+
+```
+.env
+```
+
+A template file is provided:
+
+```
+.env.example
+```
+
+Each developer should create their own `.env` file based on `.env.example`.
+
+Typical variables include:
+
+- SECRET_KEY
+- DEBUG
+- DATABASE_NAME
+- DATABASE_USER
+- DATABASE_PASSWORD
+- DATABASE_HOST
+- DATABASE_PORT
+
+---
+
+# 🗄 Database
+
+The project uses **PostgreSQL**.
+
+SQLite is not used.
+
+Every developer must create a local PostgreSQL database before running the project.
+
+---
+
+# 📦 Python Environment
+
+The project uses a Python virtual environment.
+
+```
+venv/
+```
+
+All Python packages are installed inside the virtual environment.
+
+Dependencies are managed through:
+
+```
+requirements.txt
+```
+
+---
+
+# 🌐 API Architecture
+
+The backend exposes a REST API.
+
+The project uses **Function-Based Views** with the `@api_view` decorator.
+
+Example:
+
+```python
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
+
+
+@api_view(["GET"])
+def tour_list(request):
+    return Response([])
+```
+
+Class-Based Views are not used unless explicitly required.
+
+---
+
+# 🔄 Frontend–Backend Communication
+
+Application data flow:
+
+```
+React
+   ↓
+HTTP Request
+   ↓
+Django REST API
+   ↓
+Business Logic
+   ↓
+PostgreSQL
+   ↓
+JSON Response
+   ↓
+React UI
+```
+
+---
+
+# 🚀 Initial Project Setup
+
+After cloning the repository from GitHub, every developer must complete the following steps.
+
+## 1. Clone the repository
+
+```bash
+git clone <repository-url>
+```
+
+---
+
+## 2. Backend Setup
+
+Go to the backend folder.
+
+```bash
+cd back
+```
+
+Create a virtual environment.
+
+```bash
+python -m venv venv
+```
+
+Activate it.
+
+### Windows
+
+```bash
+venv\Scripts\activate
+```
+
+### Linux / macOS
+
+```bash
+source venv/bin/activate
+```
+
+Install dependencies.
+
+```bash
+pip install -r requirements.txt
+```
+
+Create your environment file.
+
+```
+Copy:
+
+.env.example
+
+to
+
+.env
+```
+
+Configure your PostgreSQL credentials inside `.env`.
+
+Run migrations.
+
+```bash
+python manage.py migrate
+```
+
+Start the backend server.
+
+```bash
+python manage.py runserver
+```
+
+---
+
+## 3. Frontend Setup
+
+Open another terminal.
+
+```bash
+cd front
+```
+
+Install packages.
+
+```bash
+npm install
+```
+
+Run the frontend.
+
+```bash
+npm run dev
+```
+
+---
+
+# 🔄 Working After Pulling New Changes
+
+Whenever you pull the latest changes from GitHub:
+
+```bash
+git pull
+```
+
+Backend:
+
+```bash
+cd back
+
+venv\Scripts\activate
+
+pip install -r requirements.txt
+
+python manage.py migrate
+
+python manage.py runserver
+```
+
+Frontend:
+
+```bash
+cd front
+
+npm install
+
+npm run dev
+```
+
+> `pip install -r requirements.txt` and `npm install` are safe to run every time after pulling updates. If no dependencies changed, they will simply verify that everything is up to date.
+
+---
+
+# 📋 Backend Development Rules
+
+- Every Django application must be placed inside the `apps/` directory.
+- Every local application must be registered using the `apps.` prefix.
+- All project configuration belongs inside `config/`.
+- Environment-specific settings belong inside `config/settings/`.
+- Sensitive information must be stored in `.env`.
+- `.env.example` must be updated whenever new environment variables are introduced.
+- PostgreSQL is the only supported database.
+- Every developer must use a Python virtual environment.
+- Dependencies are managed through `requirements.txt`.
+- API endpoints should use Function-Based Views with `@api_view`.
+- Business logic should remain separated from routing and presentation.
+- The backend should expose clean REST endpoints for the React frontend.
+
+---
+
+## ✅ Backend Principles
+
+**Modularity**
+
+Each Django application has a single responsibility.
+
+**Maintainability**
+
+Project configuration is centralized inside `config/`.
+
+**Consistency**
+
+All developers follow the same project structure and workflow.
+
+**Scalability**
+
+New functionality should be added as a separate application inside `apps/`.
+
+**Security**
+
+Secrets and credentials must never be committed to the repository.
 ---
 
 ## 📈 Scalability Rules
