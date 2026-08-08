@@ -56,11 +56,27 @@
         "documentation": {}
     },
     {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
         "isExtraImport": true,
-        "detail": "django.contrib",
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
         "documentation": {}
     },
     {
@@ -85,6 +101,30 @@
         "description": "django.contrib",
         "isExtraImport": true,
         "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
         "documentation": {}
     },
     {
@@ -153,6 +193,30 @@
     },
     {
         "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
         "importPath": "rest_framework",
         "description": "rest_framework",
         "isExtraImport": true,
@@ -176,6 +240,14 @@
         "documentation": {}
     },
     {
+        "label": "APITestCase",
+        "importPath": "rest_framework.test",
+        "description": "rest_framework.test",
+        "isExtraImport": true,
+        "detail": "rest_framework.test",
+        "documentation": {}
+    },
+    {
         "label": "path",
         "importPath": "django.urls",
         "description": "django.urls",
@@ -185,6 +257,22 @@
     },
     {
         "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "reverse",
         "importPath": "django.urls",
         "description": "django.urls",
         "isExtraImport": true,
@@ -288,6 +376,22 @@
         "documentation": {}
     },
     {
+        "label": "api_view",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "permission_classes",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
         "label": "IsAdminUser",
         "importPath": "rest_framework.permissions",
         "description": "rest_framework.permissions",
@@ -317,6 +421,30 @@
         "description": "rest_framework.permissions",
         "isExtraImport": true,
         "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "BasePermission",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "IsAuthenticated",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
         "documentation": {}
     },
     {
@@ -394,7 +522,24 @@
         "documentation": {}
     },
     {
+        "label": "django.contrib.auth.models",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
         "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractUser",
         "importPath": "django.contrib.auth.models",
         "description": "django.contrib.auth.models",
         "isExtraImport": true,
@@ -442,6 +587,96 @@
         "documentation": {}
     },
     {
+        "label": "django.contrib.auth.validators",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.contrib.auth.validators",
+        "description": "django.contrib.auth.validators",
+        "detail": "django.contrib.auth.validators",
+        "documentation": {}
+    },
+    {
+        "label": "django.utils.timezone",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.utils.timezone",
+        "description": "django.utils.timezone",
+        "detail": "django.utils.timezone",
+        "documentation": {}
+    },
+    {
+        "label": "UserAdmin",
+        "importPath": "django.contrib.auth.admin",
+        "description": "django.contrib.auth.admin",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.admin",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_model",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_model",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "get_user_model",
+        "importPath": "django.contrib.auth",
+        "description": "django.contrib.auth",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth",
+        "documentation": {}
+    },
+    {
+        "label": "validate_password",
+        "importPath": "django.contrib.auth.password_validation",
+        "description": "django.contrib.auth.password_validation",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.password_validation",
+        "documentation": {}
+    },
+    {
+        "label": "TokenObtainPairSerializer",
+        "importPath": "rest_framework_simplejwt.serializers",
+        "description": "rest_framework_simplejwt.serializers",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "TokenRefreshView",
+        "importPath": "rest_framework_simplejwt.views",
+        "description": "rest_framework_simplejwt.views",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.views",
+        "documentation": {}
+    },
+    {
+        "label": "TokenObtainPairView",
+        "importPath": "rest_framework_simplejwt.views",
+        "description": "rest_framework_simplejwt.views",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.views",
+        "documentation": {}
+    },
+    {
+        "label": "RefreshToken",
+        "importPath": "rest_framework_simplejwt.tokens",
+        "description": "rest_framework_simplejwt.tokens",
+        "isExtraImport": true,
+        "detail": "rest_framework_simplejwt.tokens",
+        "documentation": {}
+    },
+    {
         "label": "Path",
         "importPath": "pathlib",
         "description": "pathlib",
@@ -455,6 +690,14 @@
         "description": "decouple",
         "isExtraImport": true,
         "detail": "decouple",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
         "documentation": {}
     },
     {
@@ -726,6 +969,195 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "back.apps.users.migrations.0001_initial",
+        "description": "back.apps.users.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('auth', '0012_alter_user_first_name_max_length'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='CustomUser',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "back.apps.users.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "CustomUserAdmin",
+        "kind": 6,
+        "importPath": "back.apps.users.admin",
+        "description": "back.apps.users.admin",
+        "peekOfCode": "class CustomUserAdmin(UserAdmin):\n    list_display = (\n        \"username\",\n        \"email\",\n        \"role\",\n        \"is_active\",\n    )\n    fieldsets = UserAdmin.fieldsets + (\n        (\n            \"Role information\",",
+        "detail": "back.apps.users.admin",
+        "documentation": {}
+    },
+    {
+        "label": "UsersConfig",
+        "kind": 6,
+        "importPath": "back.apps.users.apps",
+        "description": "back.apps.users.apps",
+        "peekOfCode": "class UsersConfig(AppConfig):\n    default_auto_field = \"django.db.models.BigAutoField\"\n    name = \"apps.users\"",
+        "detail": "back.apps.users.apps",
+        "documentation": {}
+    },
+    {
+        "label": "CustomUser",
+        "kind": 6,
+        "importPath": "back.apps.users.models",
+        "description": "back.apps.users.models",
+        "peekOfCode": "class CustomUser(AbstractUser):\n    class Roles(models.TextChoices):\n        ADMIN = \"ADMIN\", \"Admin\"\n        USER = \"USER\", \"User\"\n    email = models.EmailField(\n        unique=True,\n        blank=False,\n    )\n    role = models.CharField(\n        max_length=10,",
+        "detail": "back.apps.users.models",
+        "documentation": {}
+    },
+    {
+        "label": "IsAdmin",
+        "kind": 6,
+        "importPath": "back.apps.users.permissions",
+        "description": "back.apps.users.permissions",
+        "peekOfCode": "class IsAdmin(BasePermission):\n    def has_permission(self, request, view):\n        return (\n            request.user.is_authenticated\n            and request.user.role == \"ADMIN\"\n        )\nclass IsOwnerOrAdmin(BasePermission):\n    def has_object_permission(self, request, view, obj):\n        if not request.user.is_authenticated:\n            return False",
+        "detail": "back.apps.users.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "IsOwnerOrAdmin",
+        "kind": 6,
+        "importPath": "back.apps.users.permissions",
+        "description": "back.apps.users.permissions",
+        "peekOfCode": "class IsOwnerOrAdmin(BasePermission):\n    def has_object_permission(self, request, view, obj):\n        if not request.user.is_authenticated:\n            return False\n        if request.user.role == \"ADMIN\":\n            return True\n        return obj == request.user",
+        "detail": "back.apps.users.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "UserRegisterSerializer",
+        "kind": 6,
+        "importPath": "back.apps.users.serializers",
+        "description": "back.apps.users.serializers",
+        "peekOfCode": "class UserRegisterSerializer(serializers.ModelSerializer):\n    password = serializers.CharField(\n        write_only=True,\n        validators=[validate_password]\n    )\n    class Meta:\n        model = User\n        fields = (\n            \"username\",\n            \"email\",",
+        "detail": "back.apps.users.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "UserSerializer",
+        "kind": 6,
+        "importPath": "back.apps.users.serializers",
+        "description": "back.apps.users.serializers",
+        "peekOfCode": "class UserSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = User\n        fields = (\n            \"id\",\n            \"username\",\n            \"email\",\n            \"role\",\n            \"created_at\",\n        )",
+        "detail": "back.apps.users.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "CustomTokenObtainPairSerializer",
+        "kind": 6,
+        "importPath": "back.apps.users.serializers",
+        "description": "back.apps.users.serializers",
+        "peekOfCode": "class CustomTokenObtainPairSerializer(TokenObtainPairSerializer):\n    @classmethod\n    def get_token(cls, user):\n        token = super().get_token(user)\n        token[\"username\"] = user.username\n        token[\"role\"] = user.role\n        return token\n    def validate(self, attrs):\n        data = super().validate(attrs)\n        data[\"username\"] = self.user.username",
+        "detail": "back.apps.users.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 5,
+        "importPath": "back.apps.users.serializers",
+        "description": "back.apps.users.serializers",
+        "peekOfCode": "User = get_user_model()\nclass UserRegisterSerializer(serializers.ModelSerializer):\n    password = serializers.CharField(\n        write_only=True,\n        validators=[validate_password]\n    )\n    class Meta:\n        model = User\n        fields = (\n            \"username\",",
+        "detail": "back.apps.users.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "UserModelTests",
+        "kind": 6,
+        "importPath": "back.apps.users.tests",
+        "description": "back.apps.users.tests",
+        "peekOfCode": "class UserModelTests(APITestCase):\n    def test_user_created_with_default_role(self):\n        user = User.objects.create_user(\n            username=\"testuser\",\n            email=\"test@test.com\",\n            password=\"password123\"\n        )\n        self.assertEqual(\n            user.role,\n            CustomUser.Roles.USER",
+        "detail": "back.apps.users.tests",
+        "documentation": {}
+    },
+    {
+        "label": "SerializerTests",
+        "kind": 6,
+        "importPath": "back.apps.users.tests",
+        "description": "back.apps.users.tests",
+        "peekOfCode": "class SerializerTests(APITestCase):\n    def test_register_serializer_valid(self):\n        data = {\n            \"username\":\"newuser\",\n            \"email\":\"new@test.com\",\n            \"password\":\"StrongPassword123!\"\n        }\n        serializer = UserRegisterSerializer(\n            data=data\n        )",
+        "detail": "back.apps.users.tests",
+        "documentation": {}
+    },
+    {
+        "label": "PermissionTests",
+        "kind": 6,
+        "importPath": "back.apps.users.tests",
+        "description": "back.apps.users.tests",
+        "peekOfCode": "class PermissionTests(APITestCase):\n    def setUp(self):\n        self.user = User.objects.create_user(\n            username=\"user\",\n            password=\"password123\"\n        )\n        self.admin = User.objects.create_user(\n            username=\"admin\",\n            password=\"password123\",\n            role=\"ADMIN\"",
+        "detail": "back.apps.users.tests",
+        "documentation": {}
+    },
+    {
+        "label": "AuthenticationAPITests",
+        "kind": 6,
+        "importPath": "back.apps.users.tests",
+        "description": "back.apps.users.tests",
+        "peekOfCode": "class AuthenticationAPITests(APITestCase):\n    def test_register_api(self):\n        url = \"/api/auth/register/\"\n        response = self.client.post(\n            url,\n            {\n                \"username\":\"apiuser\",\n                \"email\":\"api@test.com\",\n                \"password\":\"StrongPassword123!\"\n            }",
+        "detail": "back.apps.users.tests",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 5,
+        "importPath": "back.apps.users.tests",
+        "description": "back.apps.users.tests",
+        "peekOfCode": "User = get_user_model()\nclass UserModelTests(APITestCase):\n    def test_user_created_with_default_role(self):\n        user = User.objects.create_user(\n            username=\"testuser\",\n            email=\"test@test.com\",\n            password=\"password123\"\n        )\n        self.assertEqual(\n            user.role,",
+        "detail": "back.apps.users.tests",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "back.apps.users.urls",
+        "description": "back.apps.users.urls",
+        "peekOfCode": "urlpatterns = [\n    path(\n        \"auth/register/\",\n        register,\n        name=\"register\"\n    ),\n    path(\n        \"auth/login/\",\n        CustomTokenObtainPairView.as_view(),\n        name=\"login\"",
+        "detail": "back.apps.users.urls",
+        "documentation": {}
+    },
+    {
+        "label": "CustomTokenObtainPairView",
+        "kind": 6,
+        "importPath": "back.apps.users.views",
+        "description": "back.apps.users.views",
+        "peekOfCode": "class CustomTokenObtainPairView(TokenObtainPairView):\n    serializer_class = CustomTokenObtainPairSerializer\n# ---------------------------\n# REGISTER\n# POST /api/auth/register/\n# ---------------------------\n@api_view([\"POST\"])\ndef register(request):\n    serializer = UserRegisterSerializer(data=request.data)\n    if serializer.is_valid():",
+        "detail": "back.apps.users.views",
+        "documentation": {}
+    },
+    {
+        "label": "register",
+        "kind": 2,
+        "importPath": "back.apps.users.views",
+        "description": "back.apps.users.views",
+        "peekOfCode": "def register(request):\n    serializer = UserRegisterSerializer(data=request.data)\n    if serializer.is_valid():\n        user = serializer.save()\n        return Response(\n            {\n                \"message\": \"User registered successfully\",\n                \"user\": UserSerializer(user).data\n            },\n            status=status.HTTP_201_CREATED",
+        "detail": "back.apps.users.views",
+        "documentation": {}
+    },
+    {
+        "label": "me",
+        "kind": 2,
+        "importPath": "back.apps.users.views",
+        "description": "back.apps.users.views",
+        "peekOfCode": "def me(request):\n    user = request.user\n    if request.method == \"GET\":\n        serializer = UserSerializer(user)\n        return Response(serializer.data)\n    elif request.method == \"PUT\":\n        serializer = UserSerializer(\n            user,\n            data=request.data,\n            partial=True",
+        "detail": "back.apps.users.views",
+        "documentation": {}
+    },
+    {
+        "label": "logout",
+        "kind": 2,
+        "importPath": "back.apps.users.views",
+        "description": "back.apps.users.views",
+        "peekOfCode": "def logout(request):\n    try:\n        refresh_token = request.data[\"refresh\"]\n        token = RefreshToken(refresh_token)\n        token.blacklist()\n        return Response(\n            {\n                \"message\": \"Logout successful\"\n            },\n            status=status.HTTP_204_NO_CONTENT",
+        "detail": "back.apps.users.views",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 5,
+        "importPath": "back.apps.users.views",
+        "description": "back.apps.users.views",
+        "peekOfCode": "User = get_user_model()\n# ---------------------------\n# LOGIN\n# ---------------------------\nclass CustomTokenObtainPairView(TokenObtainPairView):\n    serializer_class = CustomTokenObtainPairSerializer\n# ---------------------------\n# REGISTER\n# POST /api/auth/register/\n# ---------------------------",
+        "detail": "back.apps.users.views",
+        "documentation": {}
+    },
+    {
         "label": "BASE_DIR",
         "kind": 5,
         "importPath": "back.config.settings.base",
@@ -771,6 +1203,24 @@
         "documentation": {}
     },
     {
+        "label": "REST_FRAMEWORK",
+        "kind": 5,
+        "importPath": "back.config.settings.base",
+        "description": "back.config.settings.base",
+        "peekOfCode": "REST_FRAMEWORK = {\n    \"DEFAULT_AUTHENTICATION_CLASSES\": (\n        \"rest_framework_simplejwt.authentication.JWTAuthentication\",\n    ),\n    \"DEFAULT_RENDERER_CLASSES\": [\n        \"rest_framework.renderers.JSONRenderer\",\n    ],\n}\nSIMPLE_JWT = {\n    \"ACCESS_TOKEN_LIFETIME\": timedelta(minutes=30),",
+        "detail": "back.config.settings.base",
+        "documentation": {}
+    },
+    {
+        "label": "SIMPLE_JWT",
+        "kind": 5,
+        "importPath": "back.config.settings.base",
+        "description": "back.config.settings.base",
+        "peekOfCode": "SIMPLE_JWT = {\n    \"ACCESS_TOKEN_LIFETIME\": timedelta(minutes=30),\n    \"REFRESH_TOKEN_LIFETIME\": timedelta(days=1),\n    \"ROTATE_REFRESH_TOKENS\": True,\n    \"BLACKLIST_AFTER_ROTATION\": True,\n}\nUNFOLD = {\n    \"SITE_TITLE\": \"Trinity Travel Boutique\",\n    \"SITE_HEADER\": \"Trinity Travel Boutique\",\n    \"COLORS\": {",
+        "detail": "back.config.settings.base",
+        "documentation": {}
+    },
+    {
         "label": "UNFOLD",
         "kind": 5,
         "importPath": "back.config.settings.base",
@@ -811,16 +1261,7 @@
         "kind": 5,
         "importPath": "back.config.settings.base",
         "description": "back.config.settings.base",
-        "peekOfCode": "WSGI_APPLICATION = \"config.wsgi.application\"\nREST_FRAMEWORK = {\n    \"DEFAULT_RENDERER_CLASSES\": [\n        \"rest_framework.renderers.JSONRenderer\",\n    ]\n}\nDATABASES = {\n    \"default\": {\n        \"ENGINE\": \"django.db.backends.postgresql\",\n        \"NAME\": config(\"POSTGRES_DB\"),",
-        "detail": "back.config.settings.base",
-        "documentation": {}
-    },
-    {
-        "label": "REST_FRAMEWORK",
-        "kind": 5,
-        "importPath": "back.config.settings.base",
-        "description": "back.config.settings.base",
-        "peekOfCode": "REST_FRAMEWORK = {\n    \"DEFAULT_RENDERER_CLASSES\": [\n        \"rest_framework.renderers.JSONRenderer\",\n    ]\n}\nDATABASES = {\n    \"default\": {\n        \"ENGINE\": \"django.db.backends.postgresql\",\n        \"NAME\": config(\"POSTGRES_DB\"),\n        \"USER\": config(\"POSTGRES_USER\"),",
+        "peekOfCode": "WSGI_APPLICATION = \"config.wsgi.application\"\nDATABASES = {\n    \"default\": {\n        \"ENGINE\": \"django.db.backends.postgresql\",\n        \"NAME\": config(\"POSTGRES_DB\"),\n        \"USER\": config(\"POSTGRES_USER\"),\n        \"PASSWORD\": config(\"POSTGRES_PASSWORD\"),\n        \"HOST\": config(\"POSTGRES_HOST\"),\n        \"PORT\": config(\"POSTGRES_PORT\"),\n    }",
         "detail": "back.config.settings.base",
         "documentation": {}
     },
@@ -847,7 +1288,7 @@
         "kind": 5,
         "importPath": "back.config.settings.base",
         "description": "back.config.settings.base",
-        "peekOfCode": "LANGUAGE_CODE = \"en-us\"\nTIME_ZONE = \"UTC\"\nUSE_I18N = True\nUSE_TZ = True\nSTATIC_URL = \"static/\"\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = \"media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"",
+        "peekOfCode": "LANGUAGE_CODE = \"en-us\"\nTIME_ZONE = \"UTC\"\nUSE_I18N = True\nUSE_TZ = True\nSTATIC_URL = \"static/\"\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = \"media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nAUTH_USER_MODEL = \"users.CustomUser\"",
         "detail": "back.config.settings.base",
         "documentation": {}
     },
@@ -856,7 +1297,7 @@
         "kind": 5,
         "importPath": "back.config.settings.base",
         "description": "back.config.settings.base",
-        "peekOfCode": "TIME_ZONE = \"UTC\"\nUSE_I18N = True\nUSE_TZ = True\nSTATIC_URL = \"static/\"\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = \"media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"",
+        "peekOfCode": "TIME_ZONE = \"UTC\"\nUSE_I18N = True\nUSE_TZ = True\nSTATIC_URL = \"static/\"\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = \"media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nAUTH_USER_MODEL = \"users.CustomUser\"",
         "detail": "back.config.settings.base",
         "documentation": {}
     },
@@ -865,7 +1306,7 @@
         "kind": 5,
         "importPath": "back.config.settings.base",
         "description": "back.config.settings.base",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\nSTATIC_URL = \"static/\"\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = \"media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\nSTATIC_URL = \"static/\"\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = \"media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nAUTH_USER_MODEL = \"users.CustomUser\"",
         "detail": "back.config.settings.base",
         "documentation": {}
     },
@@ -874,7 +1315,7 @@
         "kind": 5,
         "importPath": "back.config.settings.base",
         "description": "back.config.settings.base",
-        "peekOfCode": "USE_TZ = True\nSTATIC_URL = \"static/\"\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = \"media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"",
+        "peekOfCode": "USE_TZ = True\nSTATIC_URL = \"static/\"\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = \"media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nAUTH_USER_MODEL = \"users.CustomUser\"",
         "detail": "back.config.settings.base",
         "documentation": {}
     },
@@ -883,7 +1324,7 @@
         "kind": 5,
         "importPath": "back.config.settings.base",
         "description": "back.config.settings.base",
-        "peekOfCode": "STATIC_URL = \"static/\"\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = \"media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"",
+        "peekOfCode": "STATIC_URL = \"static/\"\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = \"media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nAUTH_USER_MODEL = \"users.CustomUser\"",
         "detail": "back.config.settings.base",
         "documentation": {}
     },
@@ -892,7 +1333,7 @@
         "kind": 5,
         "importPath": "back.config.settings.base",
         "description": "back.config.settings.base",
-        "peekOfCode": "STATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = \"media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"",
+        "peekOfCode": "STATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = \"media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nAUTH_USER_MODEL = \"users.CustomUser\"",
         "detail": "back.config.settings.base",
         "documentation": {}
     },
@@ -901,7 +1342,7 @@
         "kind": 5,
         "importPath": "back.config.settings.base",
         "description": "back.config.settings.base",
-        "peekOfCode": "MEDIA_URL = \"media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"",
+        "peekOfCode": "MEDIA_URL = \"media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nAUTH_USER_MODEL = \"users.CustomUser\"",
         "detail": "back.config.settings.base",
         "documentation": {}
     },
@@ -910,7 +1351,25 @@
         "kind": 5,
         "importPath": "back.config.settings.base",
         "description": "back.config.settings.base",
-        "peekOfCode": "MEDIA_ROOT = BASE_DIR / \"media\"",
+        "peekOfCode": "MEDIA_ROOT = BASE_DIR / \"media\"\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nAUTH_USER_MODEL = \"users.CustomUser\"",
+        "detail": "back.config.settings.base",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_AUTO_FIELD",
+        "kind": 5,
+        "importPath": "back.config.settings.base",
+        "description": "back.config.settings.base",
+        "peekOfCode": "DEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nAUTH_USER_MODEL = \"users.CustomUser\"",
+        "detail": "back.config.settings.base",
+        "documentation": {}
+    },
+    {
+        "label": "AUTH_USER_MODEL",
+        "kind": 5,
+        "importPath": "back.config.settings.base",
+        "description": "back.config.settings.base",
+        "peekOfCode": "AUTH_USER_MODEL = \"users.CustomUser\"",
         "detail": "back.config.settings.base",
         "documentation": {}
     },
@@ -928,7 +1387,7 @@
         "kind": 5,
         "importPath": "back.config.urls",
         "description": "back.config.urls",
-        "peekOfCode": "urlpatterns = [\n    path(\"admin/\", admin.site.urls),\n    path(\"api/contacts/\", include(\"apps.contacts.urls\")),\n    path(\"api/tours/\",include(\"apps.tours.urls\")),\n    path(\"api/reviews/\", include(\"apps.reviews.urls\")),\n]",
+        "peekOfCode": "urlpatterns = [\n    path(\"admin/\", admin.site.urls),\n    path(\"api/contacts/\", include(\"apps.contacts.urls\")),\n    path(\"api/tours/\",include(\"apps.tours.urls\")),\n    path(\"api/reviews/\", include(\"apps.reviews.urls\")),\n    path(\"api/\", include(\"apps.users.urls\")),\n]",
         "detail": "back.config.urls",
         "documentation": {}
     },
