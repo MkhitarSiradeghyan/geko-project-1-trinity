@@ -1,8 +1,20 @@
 from rest_framework import serializers
 from .models import Category, Article
 
+class CategoryListSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Category
+        fields = [
+            "id",
+            "title",
+            "slug",
+            "summary",
+            "cover_image",
+            "published_at",
+            "category",
+        ]
 
-class CategorySerializer(serializers.ModelSerializer):
+class CategoryDetailSerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
         fields = "__all__"
