@@ -25,7 +25,10 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     
     "rest_framework",
+    "django_filters",
     "corsheaders",
+    "apps.news",
+    'apps.tours',
 ]
 UNFOLD = {
     "SITE_TITLE": "Trinity Travel Boutique",
@@ -65,6 +68,7 @@ TEMPLATES = [
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
             ],
+            
         },
     },
 ]
