@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     "apps.tours",
     "apps.reviews",
     "apps.users",
+    "drf_spectacular",
 ]
 
 REST_FRAMEWORK = {
@@ -89,6 +90,24 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "config.wsgi.application"
+
+REST_FRAMEWORK = {
+    "DEFAULT_RENDERER_CLASSES": [
+        "rest_framework.renderers.JSONRenderer",
+    ],
+
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+
+    "DEFAULT_AUTHENTICATION_CLASSES": (
+        "rest_framework_simplejwt.authentication.JWTAuthentication",
+    ),
+}
+
+SPECTACULAR_SETTINGS = {
+    "TITLE": "Backend API",
+    "DESCRIPTION": "API documentation",
+    "VERSION": "1.0.0",
+}
 
 DATABASES = {
     "default": {
