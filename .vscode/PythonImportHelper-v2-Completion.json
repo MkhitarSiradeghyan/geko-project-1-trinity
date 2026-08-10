@@ -485,6 +485,14 @@
         "documentation": {}
     },
     {
+        "label": "admin",
+        "importPath": "django.contrib.auth.admin",
+        "description": "django.contrib.auth.admin",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.admin",
+        "documentation": {}
+    },
+    {
         "label": "get_user_model",
         "importPath": "django.contrib.auth",
         "description": "django.contrib.auth",
@@ -949,7 +957,7 @@
         "kind": 5,
         "importPath": "back.apps.users.urls",
         "description": "back.apps.users.urls",
-        "peekOfCode": "urlpatterns = [\n    path(\n        \"auth/register/\",\n        register,\n        name=\"register\"\n    ),\n    path(\n        \"auth/login/\",\n        CustomTokenObtainPairView.as_view(),\n        name=\"login\"",
+        "peekOfCode": "urlpatterns = [\n    path(\"register/\", register, name=\"register\"),\n    path(\"login/\", CustomTokenObtainPairView.as_view(), name=\"login\"),\n    path(\"token/refresh/\", TokenRefreshView.as_view(), name=\"token_refresh\"),\n    path(\"logout/\", logout, name=\"logout\"),\n    path(\"me/\", me, name=\"me\"),\n]",
         "detail": "back.apps.users.urls",
         "documentation": {}
     },
@@ -1246,7 +1254,7 @@
         "kind": 5,
         "importPath": "back.config.urls",
         "description": "back.config.urls",
-        "peekOfCode": "urlpatterns = [\n    path(\"admin/\", admin.site.urls),\n    path(\"api/contacts/\", include(\"apps.contacts.urls\")),\n    path(\"api/tours/\",include(\"apps.tours.urls\")),\n    path(\"api/reviews/\", include(\"apps.reviews.urls\")),\n    path(\"api/\", include(\"apps.users.urls\")),\n    path(\"api/schema/\",SpectacularAPIView.as_view(),name=\"schema\",),\n    path(\"api/docs/\",SpectacularSwaggerView.as_view(url_name=\"schema\"),name=\"swagger-ui\",),\n    path(\"api/redoc/\",SpectacularRedocView.as_view(url_name=\"schema\"),name=\"redoc\",),\n]",
+        "peekOfCode": "urlpatterns = [\n    path(\"admin/\", admin.site.urls),\n    path(\"api/contacts/\", include(\"apps.contacts.urls\")),\n    path(\"api/tours/\",include(\"apps.tours.urls\")),\n    path(\"api/reviews/\", include(\"apps.reviews.urls\")),\n    path(\"api/auth/\", include(\"apps.users.urls\")),\n    path(\"api/schema/\",SpectacularAPIView.as_view(),name=\"schema\",),\n    path(\"api/docs/\",SpectacularSwaggerView.as_view(url_name=\"schema\"),name=\"swagger-ui\",),\n    path(\"api/redoc/\",SpectacularRedocView.as_view(url_name=\"schema\"),name=\"redoc\",),\n]",
         "detail": "back.config.urls",
         "documentation": {}
     },

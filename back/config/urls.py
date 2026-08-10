@@ -1,4 +1,5 @@
 from django.urls import path, include
+from django.contrib.auth.admin import admin
 from django.conf.urls.static import static
 from drf_spectacular.views import (
     SpectacularAPIView,
@@ -11,7 +12,7 @@ urlpatterns = [
     path("api/contacts/", include("apps.contacts.urls")),
     path("api/tours/",include("apps.tours.urls")),
     path("api/reviews/", include("apps.reviews.urls")),
-    path("api/", include("apps.users.urls")),
+    path("api/auth/", include("apps.users.urls")),
     path("api/schema/",SpectacularAPIView.as_view(),name="schema",),
     path("api/docs/",SpectacularSwaggerView.as_view(url_name="schema"),name="swagger-ui",),
     path("api/redoc/",SpectacularRedocView.as_view(url_name="schema"),name="redoc",),
