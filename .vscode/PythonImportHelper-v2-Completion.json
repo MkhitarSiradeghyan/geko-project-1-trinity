@@ -622,6 +622,38 @@
         "documentation": {}
     },
     {
+        "label": "static",
+        "importPath": "django.conf.urls.static",
+        "description": "django.conf.urls.static",
+        "isExtraImport": true,
+        "detail": "django.conf.urls.static",
+        "documentation": {}
+    },
+    {
+        "label": "SpectacularAPIView",
+        "importPath": "drf_spectacular.views",
+        "description": "drf_spectacular.views",
+        "isExtraImport": true,
+        "detail": "drf_spectacular.views",
+        "documentation": {}
+    },
+    {
+        "label": "SpectacularSwaggerView",
+        "importPath": "drf_spectacular.views",
+        "description": "drf_spectacular.views",
+        "isExtraImport": true,
+        "detail": "drf_spectacular.views",
+        "documentation": {}
+    },
+    {
+        "label": "SpectacularRedocView",
+        "importPath": "drf_spectacular.views",
+        "description": "drf_spectacular.views",
+        "isExtraImport": true,
+        "detail": "drf_spectacular.views",
+        "documentation": {}
+    },
+    {
         "label": "get_wsgi_application",
         "importPath": "django.core.wsgi",
         "description": "django.core.wsgi",
@@ -958,7 +990,7 @@
         "kind": 5,
         "importPath": "back.apps.users.urls",
         "description": "back.apps.users.urls",
-        "peekOfCode": "urlpatterns = [\n    path(\n        \"auth/register/\",\n        register,\n        name=\"register\"\n    ),\n    path(\n        \"auth/login/\",\n        CustomTokenObtainPairView.as_view(),\n        name=\"login\"",
+        "peekOfCode": "urlpatterns = [\n    path(\"register/\", register, name=\"register\"),\n    path(\"login/\", CustomTokenObtainPairView.as_view(), name=\"login\"),\n    path(\"token/refresh/\", TokenRefreshView.as_view(), name=\"token_refresh\"),\n    path(\"logout/\", logout, name=\"logout\"),\n    path(\"me/\", me, name=\"me\"),\n]",
         "detail": "back.apps.users.urls",
         "documentation": {}
     },
@@ -1111,7 +1143,25 @@
         "kind": 5,
         "importPath": "back.config.settings.base",
         "description": "back.config.settings.base",
-        "peekOfCode": "WSGI_APPLICATION = \"config.wsgi.application\"\nDATABASES = {\n    \"default\": {\n        \"ENGINE\": \"django.db.backends.postgresql\",\n        \"NAME\": config(\"POSTGRES_DB\"),\n        \"USER\": config(\"POSTGRES_USER\"),\n        \"PASSWORD\": config(\"POSTGRES_PASSWORD\"),\n        \"HOST\": config(\"POSTGRES_HOST\"),\n        \"PORT\": config(\"POSTGRES_PORT\"),\n    }",
+        "peekOfCode": "WSGI_APPLICATION = \"config.wsgi.application\"\nREST_FRAMEWORK = {\n    \"DEFAULT_RENDERER_CLASSES\": [\n        \"rest_framework.renderers.JSONRenderer\",\n    ],\n    \"DEFAULT_SCHEMA_CLASS\": \"drf_spectacular.openapi.AutoSchema\",\n    \"DEFAULT_AUTHENTICATION_CLASSES\": (\n        \"rest_framework_simplejwt.authentication.JWTAuthentication\",\n    ),\n}",
+        "detail": "back.config.settings.base",
+        "documentation": {}
+    },
+    {
+        "label": "REST_FRAMEWORK",
+        "kind": 5,
+        "importPath": "back.config.settings.base",
+        "description": "back.config.settings.base",
+        "peekOfCode": "REST_FRAMEWORK = {\n    \"DEFAULT_RENDERER_CLASSES\": [\n        \"rest_framework.renderers.JSONRenderer\",\n    ],\n    \"DEFAULT_SCHEMA_CLASS\": \"drf_spectacular.openapi.AutoSchema\",\n    \"DEFAULT_AUTHENTICATION_CLASSES\": (\n        \"rest_framework_simplejwt.authentication.JWTAuthentication\",\n    ),\n}\nSPECTACULAR_SETTINGS = {",
+        "detail": "back.config.settings.base",
+        "documentation": {}
+    },
+    {
+        "label": "SPECTACULAR_SETTINGS",
+        "kind": 5,
+        "importPath": "back.config.settings.base",
+        "description": "back.config.settings.base",
+        "peekOfCode": "SPECTACULAR_SETTINGS = {\n    \"TITLE\": \"Backend API\",\n    \"DESCRIPTION\": \"API documentation\",\n    \"VERSION\": \"1.0.0\",\n}\nDATABASES = {\n    \"default\": {\n        \"ENGINE\": \"django.db.backends.postgresql\",\n        \"NAME\": config(\"POSTGRES_DB\"),\n        \"USER\": config(\"POSTGRES_USER\"),",
         "detail": "back.config.settings.base",
         "documentation": {}
     },
@@ -1237,7 +1287,7 @@
         "kind": 5,
         "importPath": "back.config.urls",
         "description": "back.config.urls",
-        "peekOfCode": "urlpatterns = [\n    path(\"admin/\", admin.site.urls),\n    path(\"api/contacts/\", include(\"apps.contacts.urls\")),\n    path(\"api/tours/\",include(\"apps.tours.urls\")),\n    path(\"api/reviews/\", include(\"apps.reviews.urls\")),\n    path(\"api/\", include(\"apps.users.urls\")),\n]",
+        "peekOfCode": "urlpatterns = [\n    path(\"admin/\", admin.site.urls),\n    path(\"api/contacts/\", include(\"apps.contacts.urls\")),\n    path(\"api/tours/\",include(\"apps.tours.urls\")),\n    path(\"api/reviews/\", include(\"apps.reviews.urls\")),\n    path(\"api/auth/\", include(\"apps.users.urls\")),\n    path(\"api/schema/\",SpectacularAPIView.as_view(),name=\"schema\",),\n    path(\"api/docs/\",SpectacularSwaggerView.as_view(url_name=\"schema\"),name=\"swagger-ui\",),\n    path(\"api/redoc/\",SpectacularRedocView.as_view(url_name=\"schema\"),name=\"redoc\",),\n]",
         "detail": "back.config.urls",
         "documentation": {}
     },

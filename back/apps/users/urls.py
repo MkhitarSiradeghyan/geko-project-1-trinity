@@ -11,34 +11,9 @@ from .views import (
 
 
 urlpatterns = [
-
-    path(
-        "auth/register/",
-        register,
-        name="register"
-    ),
-
-    path(
-        "auth/login/",
-        CustomTokenObtainPairView.as_view(),
-        name="login"
-    ),
-
-    path(
-        "auth/token/refresh/",
-        TokenRefreshView.as_view(),
-        name="token_refresh"
-    ),
-
-    path(
-        "auth/logout/",
-        logout,
-        name="logout"
-    ),
-
-    path(
-        "users/me/",
-        me,
-        name="me"
-    ),
+    path("register/", register, name="register"),
+    path("login/", CustomTokenObtainPairView.as_view(), name="login"),
+    path("token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
+    path("logout/", logout, name="logout"),
+    path("me/", me, name="me"),
 ]

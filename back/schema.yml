@@ -1,0 +1,349 @@
+openapi: 3.0.3
+info:
+  title: Backend API
+  version: 1.0.0
+  description: API documentation
+paths:
+  /api/schema/:
+    get:
+      operationId: schema_retrieve
+      description: |-
+        OpenApi3 schema for this API. Format can be selected via content negotiation.
+
+        - YAML: application/vnd.oai.openapi
+        - JSON: application/vnd.oai.openapi+json
+      parameters:
+      - in: query
+        name: format
+        schema:
+          type: string
+          enum:
+          - json
+          - yaml
+      - in: query
+        name: lang
+        schema:
+          type: string
+          enum:
+          - af
+          - ar
+          - ar-dz
+          - ast
+          - az
+          - be
+          - bg
+          - bn
+          - br
+          - bs
+          - ca
+          - ckb
+          - cs
+          - cy
+          - da
+          - de
+          - dsb
+          - el
+          - en
+          - en-au
+          - en-gb
+          - eo
+          - es
+          - es-ar
+          - es-co
+          - es-mx
+          - es-ni
+          - es-ve
+          - et
+          - eu
+          - fa
+          - fi
+          - fr
+          - fy
+          - ga
+          - gd
+          - gl
+          - he
+          - hi
+          - hr
+          - hsb
+          - ht
+          - hu
+          - hy
+          - ia
+          - id
+          - ig
+          - io
+          - is
+          - it
+          - ja
+          - ka
+          - kab
+          - kk
+          - km
+          - kn
+          - ko
+          - ky
+          - lb
+          - lt
+          - lv
+          - mk
+          - ml
+          - mn
+          - mr
+          - ms
+          - my
+          - nb
+          - ne
+          - nl
+          - nn
+          - os
+          - pa
+          - pl
+          - pt
+          - pt-br
+          - ro
+          - ru
+          - sk
+          - sl
+          - sq
+          - sr
+          - sr-latn
+          - sv
+          - sw
+          - ta
+          - te
+          - tg
+          - th
+          - tk
+          - tr
+          - tt
+          - udm
+          - ug
+          - uk
+          - ur
+          - uz
+          - vi
+          - zh-hans
+          - zh-hant
+      tags:
+      - schema
+      security:
+      - jwtAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/vnd.oai.openapi:
+              schema:
+                type: object
+                additionalProperties: {}
+            application/yaml:
+              schema:
+                type: object
+                additionalProperties: {}
+            application/vnd.oai.openapi+json:
+              schema:
+                type: object
+                additionalProperties: {}
+            application/json:
+              schema:
+                type: object
+                additionalProperties: {}
+          description: ''
+  /api/tours/:
+    get:
+      operationId: tours_list
+      description: Returns all available tours or creates a new tour.
+      summary: Get tours list or create a tour
+      tags:
+      - tours
+      security:
+      - jwtAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Tour'
+          description: ''
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Tour'
+          description: ''
+        '400':
+          description: Invalid request data
+    post:
+      operationId: tours_create
+      description: Returns all available tours or creates a new tour.
+      summary: Get tours list or create a tour
+      tags:
+      - tours
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tour'
+            examples:
+              TourExample:
+                value:
+                  title: Armenia Tour
+                  price: 150000
+                summary: Tour example
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Tour'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Tour'
+        required: true
+      security:
+      - jwtAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Tour'
+          description: ''
+        '201':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Tour'
+          description: ''
+        '400':
+          description: Invalid request data
+  /api/tours/{id}/:
+    get:
+      operationId: tours_retrieve
+      description: Retrieves, updates or deletes a specific tour.
+      summary: Get, update or delete a tour
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        required: true
+      tags:
+      - tours
+      security:
+      - jwtAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Tour'
+          description: ''
+        '204':
+          description: Tour deleted successfully
+        '400':
+          description: Invalid request data
+        '404':
+          description: Tour not found
+    put:
+      operationId: tours_update
+      description: Retrieves, updates or deletes a specific tour.
+      summary: Get, update or delete a tour
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        required: true
+      tags:
+      - tours
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Tour'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Tour'
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/Tour'
+        required: true
+      security:
+      - jwtAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Tour'
+          description: ''
+        '204':
+          description: Tour deleted successfully
+        '400':
+          description: Invalid request data
+        '404':
+          description: Tour not found
+    delete:
+      operationId: tours_destroy
+      description: Retrieves, updates or deletes a specific tour.
+      summary: Get, update or delete a tour
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: integer
+        required: true
+      tags:
+      - tours
+      security:
+      - jwtAuth: []
+      - {}
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Tour'
+          description: ''
+        '204':
+          description: Tour deleted successfully
+        '400':
+          description: Invalid request data
+        '404':
+          description: Tour not found
+components:
+  schemas:
+    Tour:
+      type: object
+      properties:
+        id:
+          type: integer
+          readOnly: true
+        title:
+          type: string
+          maxLength: 150
+        price:
+          type: string
+          format: decimal
+          pattern: ^-?\d{0,8}(?:\.\d{0,2})?$
+        created_at:
+          type: string
+          format: date-time
+          readOnly: true
+      required:
+      - created_at
+      - id
+      - price
+      - title
+  securitySchemes:
+    jwtAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
