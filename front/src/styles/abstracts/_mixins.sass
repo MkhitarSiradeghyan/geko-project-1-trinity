@@ -1,0 +1,34 @@
+@use "sass:map"
+@use "variables" as *
+@use "functions" as *
+
+@mixin respond($breakpoint)
+  @if not map.has-key($breakpoints, $breakpoint)
+    @error "Unknown breakpoint `#{$breakpoint}`"
+  @media (min-width: map.get($breakpoints, $breakpoint))
+    @content
+
+@mixin section-container
+  width: 100%
+  max-width: $container-max-width
+  margin-inline: auto
+  padding-inline: $spacing-3
+
+@mixin flex-center($direction: row, $gap: 0)
+  display: flex
+  flex-direction: $direction
+  align-items: center
+  justify-content: center
+  gap: $gap
+
+@mixin button-base
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  padding: $spacing-2 $spacing-4
+  border: none
+  border-radius: $radius-md
+  font-family: $font-family-base
+  font-weight: $font-weight-semibold
+  cursor: pointer
+  transition: background-color $transition-base

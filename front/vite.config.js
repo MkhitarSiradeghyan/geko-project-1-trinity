@@ -10,9 +10,10 @@ export default defineConfig({
     preprocessorOptions: {
       sass: {
         additionalData: 
-        `@use "@/styles/variables" as *\n` +
-        `@use "@/styles/mixins" as *\n` +
-        `@use "@/styles/functions" as *\n`
+        `@use "@/styles/abstracts/variables" as *\n` +
+        `@use "@/styles/abstracts/mixins" as *\n` +
+        `@use "@/styles/abstracts/functions" as *\n`
+
       },
     },
   },

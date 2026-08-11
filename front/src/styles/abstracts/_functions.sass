@@ -1,0 +1,14 @@
+@use "sass:math"
+@use "sass:color"
+@use "variables" as *
+
+@function rem($px)
+  @return math.div(math.div($px, $font-size-base), 1) * 1rem
+
+// IMPORTANT: multiply by 1% — a bare number here triggers a
+// deprecation warning in modern Sass
+@function tint($color, $percentage)
+  @return color.mix($color-white, $color, $percentage * 1%)
+
+@function shade($color, $percentage)
+  @return color.mix($color-black, $color, $percentage * 1%)
