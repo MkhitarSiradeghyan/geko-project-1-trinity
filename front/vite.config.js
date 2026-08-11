@@ -1,26 +1,25 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
-import { fileURLToPath } from 'url';
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
   plugins: [react()],
 
+  css: {
+    preprocessorOptions: {
+      sass: {
+        additionalData: 
+        `@use "@/styles/variables" as *\n` +
+        `@use "@/styles/mixins" as *\n` +
+        `@use "@/styles/functions" as *\n`
+      },
+    },
+  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
     },
   },
-css: {
-  preprocessorOptions: {
-    scss: {
-      api: 'modern-compiler',
-      additionalData: `@use "@/styles/variables" as *;`,
-      loadPaths: [path.resolve(__dirname, 'src')],
-    },
-  },
-},
-  
+
 });
