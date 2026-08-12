@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     "drf_spectacular",
 
     'apps.tours',
+    'apps.gallery',
 ]
 UNFOLD = {
     "SITE_TITLE": "Trinity Travel Boutique",
@@ -136,4 +137,8 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 
 MEDIA_URL = "media/"
 
+MEDIA_ROOT = BASE_DIR / "media"
+
+
+MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
