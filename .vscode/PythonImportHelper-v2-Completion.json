@@ -96,22 +96,6 @@
         "documentation": {}
     },
     {
-        "label": "admin",
-        "importPath": "django.contrib",
-        "description": "django.contrib",
-        "isExtraImport": true,
-        "detail": "django.contrib",
-        "documentation": {}
-    },
-    {
-        "label": "AppConfig",
-        "importPath": "django.apps",
-        "description": "django.apps",
-        "isExtraImport": true,
-        "detail": "django.apps",
-        "documentation": {}
-    },
-    {
         "label": "AppConfig",
         "importPath": "django.apps",
         "description": "django.apps",
@@ -233,22 +217,6 @@
     },
     {
         "label": "path",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
-        "documentation": {}
-    },
-    {
-        "label": "path",
-        "importPath": "django.urls",
-        "description": "django.urls",
-        "isExtraImport": true,
-        "detail": "django.urls",
-        "documentation": {}
-    },
-    {
-        "label": "include",
         "importPath": "django.urls",
         "description": "django.urls",
         "isExtraImport": true,
@@ -510,6 +478,14 @@
     },
     {
         "label": "UserAdmin",
+        "importPath": "django.contrib.auth.admin",
+        "description": "django.contrib.auth.admin",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.admin",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
         "importPath": "django.contrib.auth.admin",
         "description": "django.contrib.auth.admin",
         "isExtraImport": true,
@@ -866,15 +842,6 @@
         "description": "back.apps.users.admin",
         "peekOfCode": "class CustomUserAdmin(UserAdmin):\n    list_display = (\n        \"username\",\n        \"email\",\n        \"role\",\n        \"is_active\",\n    )\n    fieldsets = UserAdmin.fieldsets + (\n        (\n            \"Role information\",",
         "detail": "back.apps.users.admin",
-        "documentation": {}
-    },
-    {
-        "label": "UsersConfig",
-        "kind": 6,
-        "importPath": "back.apps.users.apps",
-        "description": "back.apps.users.apps",
-        "peekOfCode": "class UsersConfig(AppConfig):\n    default_auto_field = \"django.db.models.BigAutoField\"\n    name = \"apps.users\"",
-        "detail": "back.apps.users.apps",
         "documentation": {}
     },
     {
