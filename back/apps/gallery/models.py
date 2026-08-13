@@ -13,6 +13,7 @@ class Gallery(models.Model):
     def __str__(self):
         return self.title
 
+
 class MediaItem(models.Model):
     gallery = models.ForeignKey(Gallery,on_delete=models.CASCADE,related_name="photos")
     image = models.ImageField(upload_to="galleries/%Y/%m/")
