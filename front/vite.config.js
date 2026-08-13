@@ -10,15 +10,10 @@ const dirname = path.dirname(fileURLToPath(import.meta.url))
 
 export default defineConfig({
   plugins: [react()],
-
-  css: {
+css: {
     preprocessorOptions: {
       sass: {
-        additionalData:
-          `@use "@/styles/abstracts/variables" as *\n` +
-          `@use "@/styles/abstracts/mixins" as *\n` +
-          `@use "@/styles/abstracts/functions" as *\n`
-
+        additionalData: `@use "@/styles/index.sass" as t\n`,
       },
     },
   },

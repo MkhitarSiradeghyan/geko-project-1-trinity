@@ -479,3 +479,9 @@ A good structure helps developers:
 Clean architecture is not about creating more folders.
 
 Clean architecture is about creating clear responsibility.
+
+## Sass Architecture & Entry Point Setup
+
+- `styles/index.sass`: Central global entry point forwarding variables/tokens and mixins.
+- **Vite Integration**: Auto-injects `@use "@/styles/index.sass" as t` into every Sass module via `additionalData`.
+- **Usage**: Components directly access tokens and mixins using the `t.` namespace without manual imports.
