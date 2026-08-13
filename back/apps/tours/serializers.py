@@ -8,7 +8,9 @@ class TourSerializer(serializers.ModelSerializer):
             "id",
             "title",
             "price",
-            "created_at"
+            "description",
+            "created_at",
+            "updated_at"
         ]
 
     def validate(self, data):
