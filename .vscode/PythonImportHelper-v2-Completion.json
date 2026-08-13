@@ -96,6 +96,25 @@
         "documentation": {}
     },
     {
+<<<<<<< HEAD
+=======
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+>>>>>>> feature/setup-redux-rtk-query
         "label": "AppConfig",
         "importPath": "django.apps",
         "description": "django.apps",
@@ -240,6 +259,25 @@
         "documentation": {}
     },
     {
+<<<<<<< HEAD
+=======
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+        "label": "include",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
+>>>>>>> feature/setup-redux-rtk-query
         "label": "get_object_or_404",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
@@ -485,6 +523,7 @@
         "documentation": {}
     },
     {
+<<<<<<< HEAD
         "label": "admin",
         "importPath": "django.contrib.auth.admin",
         "description": "django.contrib.auth.admin",
@@ -493,6 +532,8 @@
         "documentation": {}
     },
     {
+=======
+>>>>>>> feature/setup-redux-rtk-query
         "label": "get_user_model",
         "importPath": "django.contrib.auth",
         "description": "django.contrib.auth",
@@ -845,6 +886,18 @@
         "documentation": {}
     },
     {
+<<<<<<< HEAD
+=======
+        "label": "UsersConfig",
+        "kind": 6,
+        "importPath": "back.apps.users.apps",
+        "description": "back.apps.users.apps",
+        "peekOfCode": "class UsersConfig(AppConfig):\n    default_auto_field = \"django.db.models.BigAutoField\"\n    name = \"apps.users\"",
+        "detail": "back.apps.users.apps",
+        "documentation": {}
+    },
+    {
+>>>>>>> feature/setup-redux-rtk-query
         "label": "CustomUser",
         "kind": 6,
         "importPath": "back.apps.users.models",
