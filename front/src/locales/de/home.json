@@ -1,0 +1,10 @@
+{
+  "hero": {
+    "title": "Entdecken Sie die Welt mit Trinity",
+    "subtitle": "Unvergessliche Reisen, geplant von Menschen, die das Reisen genauso lieben wie Sie.",
+    "cta": "Touren entdecken"
+  },
+  "welcome": {
+    "greeting": "Willkommen zurück, {{name}}!"
+  }
+}

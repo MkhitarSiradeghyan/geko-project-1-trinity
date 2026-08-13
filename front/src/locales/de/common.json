@@ -1,0 +1,13 @@
+{
+  "appName": "Trinity Reisebüro",
+  "buttons": {
+    "bookNow": "Jetzt buchen",
+    "learnMore": "Mehr erfahren",
+    "submit": "Absenden",
+    "cancel": "Abbrechen"
+  },
+  "footer": {
+    "rights": "Alle Rechte vorbehalten.",
+    "contactUs": "Kontaktieren Sie uns"
+  }
+}

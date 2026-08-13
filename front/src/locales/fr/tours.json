@@ -1,0 +1,8 @@
+{
+  "title": "Nos circuits",
+  "priceFrom": "À partir de {{price}}",
+  "resultsCount_one": "{{count}} circuit trouvé",
+  "resultsCount_other": "{{count}} circuits trouvés",
+  "duration_one": "{{count}} jour",
+  "duration_other": "{{count}} jours"
+}

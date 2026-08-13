@@ -1,0 +1,13 @@
+{
+  "appName": "Agence de voyages Trinity",
+  "buttons": {
+    "bookNow": "Réserver",
+    "learnMore": "En savoir plus",
+    "submit": "Envoyer",
+    "cancel": "Annuler"
+  },
+  "footer": {
+    "rights": "Tous droits réservés.",
+    "contactUs": "Contactez-nous"
+  }
+}
