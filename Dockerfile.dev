@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY front/package*.json ./
 
-RUN npm install
+RUN npm ci
 
 COPY front/ .
 
