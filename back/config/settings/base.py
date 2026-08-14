@@ -29,6 +29,9 @@ INSTALLED_APPS = [
     "apps.reviews",
     "apps.users",
     "drf_spectacular",
+
+    'apps.tours',
+    'apps.gallery',
 ]
 
 REST_FRAMEWORK = {
@@ -151,6 +154,12 @@ MEDIA_URL = "media/"
 
 MEDIA_ROOT = BASE_DIR / "media"
 
+<<<<<<< HEAD
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 AUTH_USER_MODEL = "users.CustomUser"
+=======
+
+MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR / "media"
+>>>>>>> feature/gallery
