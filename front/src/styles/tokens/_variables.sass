@@ -1,0 +1,110 @@
+// ==========================================================================
+// tokens/_variables.sass
+// Single source of truth for primitive design tokens.
+//
+// Color values below are sampled directly from the Trinity Travel Boutique
+// brandbook (trinity_travel_brandbook.pdf) — the three-ring logo mark and
+// its color-adaptation page — not approximated from memory.
+//
+// Brand story (brandbook, "Brand Concept & Core Values"):
+//   Rose gold   → love, warmth, emotional connection
+//   Yellow gold → trust, stability, loyalty
+//   White gold  → sincerity, purity, friendship
+//
+// Typography tokens are NOT here — see base/_typography.sass and
+// base/_fonts.sass, which reference the brandbook's actual typefaces
+// (Helvetica Rounded, Helvetica Neue World, Gill Sans MT, Yerevanyan).
+//
+// Auto-injected into every *.module.sass file via vite.config.js
+// (css.preprocessorOptions.sass.additionalData) — no manual @use needed
+// in component files.
+// ==========================================================================
+
+// --- Brand palette (sampled from the logo, brandbook pages 4 & 7) -----------
+$color-rose-gold: #e4c1af       // ring 1 — love, warmth, emotional connection
+$color-yellow-gold: #edcb82     // ring 2 — trust, stability, loyalty
+$color-white-gold: #d2d1d0      // ring 3 — sincerity, purity, friendship
+
+// Darker/richer variant of yellow gold used as a solid background swatch
+// in the brandbook's "Color Adaptation" page — use for hover/active states
+// on yellow-gold surfaces, not as a standalone brand color.
+$color-yellow-gold-deep: #d1ae6c
+
+// Rose-gold tint used as a solid background swatch in the brandbook
+// (near-identical to $color-rose-gold, kept separate for background use)
+$color-rose-gold-bg: #f0c1af
+
+// --- Neutrals (brandbook pages 2, 6, 7 — page bg / wordmark / text) ---------
+$color-black: #000000
+$color-white: #ffffff
+$color-offwhite: #f7f7f7        // page background used throughout the brandbook
+$color-charcoal: #262425        // heading/body text on light backgrounds
+$color-gray-100: #f2f2f2
+$color-gray-200: #e5e5e4
+$color-gray-300: #d2d1d0        // == $color-white-gold, brand-neutral overlap
+$color-gray-500: #9a9895
+$color-gray-700: #59564f
+$color-gray-900: $color-charcoal
+
+// --- Semantic (not defined in brandbook — standard, kept out of brand palette) ---
+$color-success: #2fb673
+$color-error: #e5484d
+$color-warning: #f5a524
+$color-info: #4c8ff0
+
+// --- Applied aliases ----------------------------------------------------------
+$color-primary: $color-yellow-gold
+$color-secondary: $color-rose-gold
+$color-tertiary: $color-white-gold
+
+$color-text: $color-charcoal
+$color-text-muted: $color-gray-500
+$color-text-inverse: $color-white
+
+$color-background: $color-offwhite
+$color-background-alt: $color-white
+$color-border: $color-gray-200
+
+// --- Spacing scale (8px base) ------------------------------------------------
+$space-0: 0
+$space-1: 4px
+$space-2: 8px
+$space-3: 16px
+$space-4: 24px
+$space-5: 32px
+$space-6: 48px
+$space-7: 64px
+$space-8: 96px
+$space-9: 128px
+
+// --- Breakpoints (mobile-first, min-width) ------------------------------------
+$breakpoints: ('mobile': 375px, 'tablet': 768px, 'desktop': 1024px, 'wide': 1280px)
+
+// --- Border radius -------------------------------------------------------------
+$radius-sm: 4px
+$radius-md: 8px
+$radius-lg: 16px
+$radius-full: 999px
+
+// --- Shadows ---------------------------------------------------------------------
+$shadow-sm: 0 1px 2px rgba($color-black, 0.06)
+$shadow-md: 0 4px 12px rgba($color-black, 0.08)
+$shadow-lg: 0 12px 32px rgba($color-black, 0.12)
+
+// --- Z-index scale -----------------------------------------------------------------
+$z-index-base: 1
+$z-index-dropdown: 100
+$z-index-sticky: 200
+$z-index-overlay: 300
+$z-index-modal: 400
+$z-index-toast: 500
+
+// --- Transitions / easing -------------------------------------------------------------
+$transition-fast: 0.15s ease
+$transition-base: 0.25s ease
+$transition-slow: 0.4s ease
+$ease-in-out: cubic-bezier(0.4, 0, 0.2, 1)
+
+// --- Layout ------------------------------------------------------------------------------
+$container-max-width: 1200px
+$container-padding: $space-3

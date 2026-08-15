@@ -1,0 +1,18 @@
+////
+//  Central Sass entry point.
+//  Forwards all global partials so consumers only need a single @use.
+//
+//  Usage in a component:
+//    @use "src/styles/index" as styles
+//    .button
+//      background: styles.$color-brand-primary
+//      border-radius: styles.$radius-md
+//
+//  Or forward selectively with a namespace of your choice:
+//    @use "src/styles/tokens/variables" as tokens
+////
+
+@forward "tokens/variables"
+@forward "mixins"
+@forward "reset"
+@forward "global"
