@@ -18,7 +18,6 @@ class MediaItem(models.Model):
     gallery = models.ForeignKey(Gallery,on_delete=models.CASCADE,related_name="photos")
     image = models.ImageField(upload_to="galleries/%Y/%m/")
     caption = models.CharField(max_length=255,blank=True)
-    file_size = models.IntegerField()
     uploaded_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):

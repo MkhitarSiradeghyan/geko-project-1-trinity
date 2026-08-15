@@ -208,6 +208,14 @@
         "documentation": {}
     },
     {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
         "label": "serializers",
         "importPath": "rest_framework",
         "description": "rest_framework",
@@ -269,6 +277,14 @@
         "description": "rest_framework.test",
         "isExtraImport": true,
         "detail": "rest_framework.test",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
         "documentation": {}
     },
     {
@@ -336,6 +352,14 @@
         "documentation": {}
     },
     {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
         "label": "api_view",
         "importPath": "rest_framework.decorators",
         "description": "rest_framework.decorators",
@@ -345,6 +369,30 @@
     },
     {
         "label": "permission_classes",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "api_view",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "permission_classes",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "parser_classes",
         "importPath": "rest_framework.decorators",
         "description": "rest_framework.decorators",
         "isExtraImport": true,
@@ -400,6 +448,30 @@
         "documentation": {}
     },
     {
+        "label": "AllowAny",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "IsAuthenticated",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "BasePermission",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
         "label": "SAFE_METHODS",
         "importPath": "rest_framework.permissions",
         "description": "rest_framework.permissions",
@@ -429,6 +501,14 @@
         "description": "rest_framework.permissions",
         "isExtraImport": true,
         "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
         "documentation": {}
     },
     {
@@ -535,6 +615,22 @@
         "description": "django.test",
         "isExtraImport": true,
         "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "MultiPartParser",
+        "importPath": "rest_framework.parsers",
+        "description": "rest_framework.parsers",
+        "isExtraImport": true,
+        "detail": "rest_framework.parsers",
+        "documentation": {}
+    },
+    {
+        "label": "FormParser",
+        "importPath": "rest_framework.parsers",
+        "description": "rest_framework.parsers",
+        "isExtraImport": true,
+        "detail": "rest_framework.parsers",
         "documentation": {}
     },
     {
@@ -911,8 +1007,17 @@
         "kind": 6,
         "importPath": "back.apps.gallery.models",
         "description": "back.apps.gallery.models",
-        "peekOfCode": "class MediaItem(models.Model):\n    gallery = models.ForeignKey(Gallery,on_delete=models.CASCADE,related_name=\"photos\")\n    image = models.ImageField(upload_to=\"galleries/%Y/%m/\")\n    caption = models.CharField(max_length=255,blank=True)\n    file_size = models.IntegerField()\n    uploaded_at = models.DateTimeField(auto_now_add=True)\n    def __str__(self):\n        return self.caption",
+        "peekOfCode": "class MediaItem(models.Model):\n    gallery = models.ForeignKey(Gallery,on_delete=models.CASCADE,related_name=\"photos\")\n    image = models.ImageField(upload_to=\"galleries/%Y/%m/\")\n    caption = models.CharField(max_length=255,blank=True)\n    uploaded_at = models.DateTimeField(auto_now_add=True)\n    def __str__(self):\n        return self.caption",
         "detail": "back.apps.gallery.models",
+        "documentation": {}
+    },
+    {
+        "label": "IsOwnerOrAdmin",
+        "kind": 6,
+        "importPath": "back.apps.gallery.permissions",
+        "description": "back.apps.gallery.permissions",
+        "peekOfCode": "class IsOwnerOrAdmin(BasePermission):\n    def has_object_permission(self,request,view,obj,):\n        if request.user.is_staff:\n            return True\n        if hasattr(obj, \"owner\"):\n            return obj.owner == request.user\n        if hasattr(obj, \"gallery\"):\n            return obj.gallery.owner == request.user\n        return False",
+        "detail": "back.apps.gallery.permissions",
         "documentation": {}
     },
     {
@@ -949,6 +1054,24 @@
         "description": "back.apps.gallery.serializers",
         "peekOfCode": "ALLOWED_EXTENSIONS = {\n    \"jpg\",\n    \"jpeg\",\n    \"png\",\n    \"webp\",\n}\nclass MediaItemSerializer(serializers.ModelSerializer):\n    image_url = serializers.SerializerMethodField()\n    class Meta:\n        model = MediaItem",
         "detail": "back.apps.gallery.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "back.apps.gallery.urls",
+        "description": "back.apps.gallery.urls",
+        "peekOfCode": "urlpatterns = [\n    path(\n        \"galleries/\",\n        gallery_list,\n        name=\"gallery-list\",\n    ),\n]",
+        "detail": "back.apps.gallery.urls",
+        "documentation": {}
+    },
+    {
+        "label": "gallery_list",
+        "kind": 2,
+        "importPath": "back.apps.gallery.views",
+        "description": "back.apps.gallery.views",
+        "peekOfCode": "def gallery_list(request):\n    if request.method == \"GET\":\n        galleries = Gallery.objects.filter(is_public=True) | Gallery.objects.filter(owner=request.user)\n        serializer = GallerySerializer(galleries.distinct(),many=True,context={\"request\": request})\n        return Response(serializer.data)\n    if request.method == \"POST\":\n        serializer = GallerySerializer(data=request.data,context={\"request\": request})\n        if serializer.is_valid():\n            serializer.save(owner=request.user)\n            return Response(serializer.data,status=status.HTTP_201_CREATED)",
+        "detail": "back.apps.gallery.views",
         "documentation": {}
     },
     {
@@ -1505,7 +1628,7 @@
         "kind": 5,
         "importPath": "back.config.urls",
         "description": "back.config.urls",
-        "peekOfCode": "urlpatterns = [\n    path(\"admin/\", admin.site.urls),\n    path(\"api/contacts/\", include(\"apps.contacts.urls\")),\n    path(\"api/tours/\",include(\"apps.tours.urls\")),\n    path(\"api/reviews/\", include(\"apps.reviews.urls\")),\n    path(\"api/auth/\", include(\"apps.users.urls\")),\n    path(\"api/schema/\",SpectacularAPIView.as_view(),name=\"schema\",),\n    path(\"api/docs/\",SpectacularSwaggerView.as_view(url_name=\"schema\"),name=\"swagger-ui\",),\n    path(\"api/redoc/\",SpectacularRedocView.as_view(url_name=\"schema\"),name=\"redoc\",),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path(\"api/\",include(\"apps.tours.urls\")),\n    path(\"api/\",include(\"apps.gallery.urls\")),\n    path(\"api/schema/\",SpectacularAPIView.as_view(),name=\"schema\",),\n    path(\"api/docs/\",SpectacularSwaggerView.as_view(url_name=\"schema\"),name=\"swagger-ui\",),\n    path(\"api/redoc/\",SpectacularRedocView.as_view(url_name=\"schema\"),name=\"redoc\",),\n]\nurlpatterns += static(\n    settings.MEDIA_URL,",
         "detail": "back.config.urls",
         "documentation": {}
     },
