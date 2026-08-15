@@ -1,18 +1,12 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import MainLayout from './layouts/MainLayout/MainLayout'
+import LanguageSwitcher from './components/LanguageSwitcher/LanguageSwitcher'
 import LanguageTest from './components/LanguageTest/LanguageTest'
 
 function App() {
   return (
-    <BrowserRouter>
+    <div>
+      <LanguageSwitcher />
       <LanguageTest />
-
-      <Routes>
-        <Route element={<MainLayout />}>
-          {/* your routes */}
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    </div>
   )
 }
 

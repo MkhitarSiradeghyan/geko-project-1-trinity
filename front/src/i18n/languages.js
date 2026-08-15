@@ -7,6 +7,5 @@ export const languages = [
   { code: 'it', name: 'Italiano' },
 ]
 
-export const languageCodes = languages.map((lang) => lang.code)
+export const languageCodes = languages.map((l) => l.code)
 export const defaultLanguage = 'en'
-
