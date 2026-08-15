@@ -1,0 +1,12 @@
+{
+  "title": "Наши туры",
+  "priceFrom": "От {{price}}",
+  "resultsCount_one": "{{count}} тур найден",
+  "resultsCount_few": "{{count}} тура найдено",
+  "resultsCount_many": "{{count}} туров найдено",
+  "resultsCount_other": "{{count}} тура найдено",
+  "duration_one": "{{count}} день",
+  "duration_few": "{{count}} дня",
+  "duration_many": "{{count}} дней",
+  "duration_other": "{{count}} дня"
+}
