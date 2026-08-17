@@ -24,14 +24,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "rest_framework_simplejwt.token_blacklist",
     "corsheaders",
-    "apps.contacts",
-    "apps.tours",
-    "apps.reviews",
-    "apps.users",
     "drf_spectacular",
-
-    'apps.tours',
-    'apps.gallery',
 ]
 
 REST_FRAMEWORK = {
