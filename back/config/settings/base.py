@@ -29,8 +29,6 @@ INSTALLED_APPS = [
     "apps.reviews",
     "apps.users",
     "drf_spectacular",
-
-    'apps.tours',
     'apps.gallery',
 ]
 
