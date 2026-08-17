@@ -1628,7 +1628,7 @@
         "kind": 5,
         "importPath": "back.config.urls",
         "description": "back.config.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path(\"api/\",include(\"apps.tours.urls\")),\n    path(\"api/\",include(\"apps.gallery.urls\")),\n    path(\"api/schema/\",SpectacularAPIView.as_view(),name=\"schema\",),\n    path(\"api/docs/\",SpectacularSwaggerView.as_view(url_name=\"schema\"),name=\"swagger-ui\",),\n    path(\"api/redoc/\",SpectacularRedocView.as_view(url_name=\"schema\"),name=\"redoc\",),\n]\nurlpatterns += static(\n    settings.MEDIA_URL,",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path(\"api/schema/\",SpectacularAPIView.as_view(),name=\"schema\",),\n    path(\"api/docs/\",SpectacularSwaggerView.as_view(url_name=\"schema\"),name=\"swagger-ui\",),\n    path(\"api/redoc/\",SpectacularRedocView.as_view(url_name=\"schema\"),name=\"redoc\",),\n]\nurlpatterns += static(\n    settings.MEDIA_URL,\n    document_root=settings.MEDIA_ROOT\n)",
         "detail": "back.config.urls",
         "documentation": {}
     },
