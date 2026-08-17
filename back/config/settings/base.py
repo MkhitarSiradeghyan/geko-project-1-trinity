@@ -12,6 +12,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     "unfold",
+    "apps.faq",
     "unfold.contrib.filters",
     "unfold.contrib.forms",
     "unfold.contrib.inlines",
