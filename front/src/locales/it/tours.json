@@ -1,0 +1,8 @@
+{
+  "title": "I nostri tour",
+  "priceFrom": "A partire da {{price}}",
+  "resultsCount_one": "{{count}} tour trovato",
+  "resultsCount_other": "{{count}} tour trovati",
+  "duration_one": "{{count}} giorno",
+  "duration_other": "{{count}} giorni"
+}

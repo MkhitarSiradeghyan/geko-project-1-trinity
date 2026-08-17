@@ -1,19 +1,5 @@
-import { useState } from 'react'
-import { Routes, Route } from 'react-router-dom'
-
-import Home from './pages/Home';
-import About from './pages/About';
-import Tours from './pages/Tours';
-import TourDetails from './pages/TourDetails';
-import Gallery from './pages/Gallery';
-import News from './pages/News';
-import NewsDetails from './pages/NewsDetails';
-import Contacts from './pages/Contacts';
-import ThankYou from './pages/ThankYou';
-import Privacy from './pages/Privacy';
-import Terms from './pages/Terms';
-import NotFound from './pages/NotFound';
-
+import LanguageSwitcher from './components/LanguageSwitcher/LanguageSwitcher'
+import LanguageTest from './components/LanguageTest/LanguageTest'
 
 function App() {
   return(
@@ -33,10 +19,6 @@ function App() {
       {/*404*/}
       <Route path='*' element = {<NotFound />} />
     </Routes>
-  )
-  const [count, setCount] = useState(0)
-  return (
-    <div>App</div>
   )
 }
 

@@ -96,6 +96,38 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
         "label": "admin",
         "importPath": "django.contrib",
         "description": "django.contrib",
@@ -117,6 +149,14 @@
         "description": "django.contrib",
         "isExtraImport": true,
         "detail": "django.contrib",
+        "documentation": {}
+    },
+    {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
         "documentation": {}
     },
     {
@@ -145,6 +185,22 @@
     },
     {
         "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
         "importPath": "rest_framework",
         "description": "rest_framework",
         "isExtraImport": true,
@@ -221,6 +277,14 @@
         "description": "rest_framework.test",
         "isExtraImport": true,
         "detail": "rest_framework.test",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
         "documentation": {}
     },
     {
@@ -280,6 +344,22 @@
         "documentation": {}
     },
     {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "get_object_or_404",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
         "label": "api_view",
         "importPath": "rest_framework.decorators",
         "description": "rest_framework.decorators",
@@ -289,6 +369,30 @@
     },
     {
         "label": "permission_classes",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "api_view",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "permission_classes",
+        "importPath": "rest_framework.decorators",
+        "description": "rest_framework.decorators",
+        "isExtraImport": true,
+        "detail": "rest_framework.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "parser_classes",
         "importPath": "rest_framework.decorators",
         "description": "rest_framework.decorators",
         "isExtraImport": true,
@@ -329,6 +433,30 @@
     },
     {
         "label": "IsAdminUser",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "BasePermission",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "AllowAny",
+        "importPath": "rest_framework.permissions",
+        "description": "rest_framework.permissions",
+        "isExtraImport": true,
+        "detail": "rest_framework.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "IsAuthenticated",
         "importPath": "rest_framework.permissions",
         "description": "rest_framework.permissions",
         "isExtraImport": true,
@@ -400,6 +528,112 @@
         "documentation": {}
     },
     {
+        "label": "Response",
+        "importPath": "rest_framework.response",
+        "description": "rest_framework.response",
+        "isExtraImport": true,
+        "detail": "rest_framework.response",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "django.contrib.auth.models",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractUser",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
+        "label": "MultiPartParser",
+        "importPath": "rest_framework.parsers",
+        "description": "rest_framework.parsers",
+        "isExtraImport": true,
+        "detail": "rest_framework.parsers",
+        "documentation": {}
+    },
+    {
+        "label": "FormParser",
+        "importPath": "rest_framework.parsers",
+        "description": "rest_framework.parsers",
+        "isExtraImport": true,
+        "detail": "rest_framework.parsers",
+        "documentation": {}
+    },
+    {
         "label": "django.core.validators",
         "kind": 6,
         "isExtraImport": true,
@@ -430,56 +664,6 @@
         "description": "django.core.validators",
         "isExtraImport": true,
         "detail": "django.core.validators",
-        "documentation": {}
-    },
-    {
-        "label": "django.db.models.deletion",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "django.db.models.deletion",
-        "description": "django.db.models.deletion",
-        "detail": "django.db.models.deletion",
-        "documentation": {}
-    },
-    {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
-        "isExtraImport": true,
-        "detail": "django.conf",
-        "documentation": {}
-    },
-    {
-        "label": "django.contrib.auth.models",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "AbstractUser",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
-        "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
-        "documentation": {}
-    },
-    {
-        "label": "TestCase",
-        "importPath": "django.test",
-        "description": "django.test",
-        "isExtraImport": true,
-        "detail": "django.test",
         "documentation": {}
     },
     {
@@ -662,6 +846,14 @@
         "documentation": {}
     },
     {
+        "label": "static",
+        "importPath": "django.conf.urls.static",
+        "description": "django.conf.urls.static",
+        "isExtraImport": true,
+        "detail": "django.conf.urls.static",
+        "documentation": {}
+    },
+    {
         "label": "SpectacularAPIView",
         "importPath": "drf_spectacular.views",
         "description": "drf_spectacular.views",
@@ -700,15 +892,6 @@
         "importPath": "sys",
         "description": "sys",
         "detail": "sys",
-        "documentation": {}
-    },
-    {
-        "label": "json",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "json",
-        "description": "json",
-        "detail": "json",
         "documentation": {}
     },
     {
@@ -790,6 +973,105 @@
         "description": "back.apps.contacts.views",
         "peekOfCode": "def contact_detail(request, pk):\n    submission = get_object_or_404(ContactSubmission, pk=pk)\n    if request.method == \"GET\":\n        serializer = ContactSubmissionSerializer(submission)\n        return Response(serializer.data)\n    if request.method == \"PUT\":\n        serializer = ContactSubmissionSerializer(submission, data=request.data, partial=True)\n        serializer.is_valid(raise_exception=True)\n        serializer.save()\n        return Response(serializer.data)",
         "detail": "back.apps.contacts.views",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "back.apps.gallery.migrations.0001_initial",
+        "description": "back.apps.gallery.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        migrations.swappable_dependency(settings.AUTH_USER_MODEL),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Gallery',\n            fields=[\n                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),",
+        "detail": "back.apps.gallery.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "GalleryConfig",
+        "kind": 6,
+        "importPath": "back.apps.gallery.apps",
+        "description": "back.apps.gallery.apps",
+        "peekOfCode": "class GalleryConfig(AppConfig):\n    name = 'apps.gallery'",
+        "detail": "back.apps.gallery.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Gallery",
+        "kind": 6,
+        "importPath": "back.apps.gallery.models",
+        "description": "back.apps.gallery.models",
+        "peekOfCode": "class Gallery(models.Model):\n    title = models.CharField(max_length=150)\n    description = models.TextField(blank=True, null=True)\n    owner = models.ForeignKey(User,on_delete=models.CASCADE,related_name=\"galleries\")\n    is_public = models.BooleanField(default=True)\n    created_at = models.DateTimeField(auto_now_add=True)\n    updated_at = models.DateTimeField(auto_now=True)\n    def __str__(self):\n        return self.title\nclass MediaItem(models.Model):",
+        "detail": "back.apps.gallery.models",
+        "documentation": {}
+    },
+    {
+        "label": "MediaItem",
+        "kind": 6,
+        "importPath": "back.apps.gallery.models",
+        "description": "back.apps.gallery.models",
+        "peekOfCode": "class MediaItem(models.Model):\n    gallery = models.ForeignKey(Gallery,on_delete=models.CASCADE,related_name=\"photos\")\n    image = models.ImageField(upload_to=\"galleries/%Y/%m/\")\n    caption = models.CharField(max_length=255,blank=True)\n    uploaded_at = models.DateTimeField(auto_now_add=True)\n    def __str__(self):\n        return self.caption",
+        "detail": "back.apps.gallery.models",
+        "documentation": {}
+    },
+    {
+        "label": "IsOwnerOrAdmin",
+        "kind": 6,
+        "importPath": "back.apps.gallery.permissions",
+        "description": "back.apps.gallery.permissions",
+        "peekOfCode": "class IsOwnerOrAdmin(BasePermission):\n    def has_object_permission(self,request,view,obj,):\n        if request.user.is_staff:\n            return True\n        if hasattr(obj, \"owner\"):\n            return obj.owner == request.user\n        if hasattr(obj, \"gallery\"):\n            return obj.gallery.owner == request.user\n        return False",
+        "detail": "back.apps.gallery.permissions",
+        "documentation": {}
+    },
+    {
+        "label": "MediaItemSerializer",
+        "kind": 6,
+        "importPath": "back.apps.gallery.serializers",
+        "description": "back.apps.gallery.serializers",
+        "peekOfCode": "class MediaItemSerializer(serializers.ModelSerializer):\n    image_url = serializers.SerializerMethodField()\n    class Meta:\n        model = MediaItem\n        fields = [\n            \"id\",\n            \"gallery\",\n            \"image\",\n            \"image_url\",\n            \"caption\",",
+        "detail": "back.apps.gallery.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "GallerySerializer",
+        "kind": 6,
+        "importPath": "back.apps.gallery.serializers",
+        "description": "back.apps.gallery.serializers",
+        "peekOfCode": "class GallerySerializer(serializers.ModelSerializer):\n    photos = MediaItemSerializer(many=True,read_only=True)\n    owner = serializers.ReadOnlyField(source=\"owner.username\")\n    class Meta:\n        model = Gallery\n        fields = [\n            \"id\",\n            \"title\",\n            \"description\",\n            \"owner\",",
+        "detail": "back.apps.gallery.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "MAX_FILE_SIZE",
+        "kind": 5,
+        "importPath": "back.apps.gallery.serializers",
+        "description": "back.apps.gallery.serializers",
+        "peekOfCode": "MAX_FILE_SIZE = 5*1024*1024\nALLOWED_EXTENSIONS = {\n    \"jpg\",\n    \"jpeg\",\n    \"png\",\n    \"webp\",\n}\nclass MediaItemSerializer(serializers.ModelSerializer):\n    image_url = serializers.SerializerMethodField()\n    class Meta:",
+        "detail": "back.apps.gallery.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "ALLOWED_EXTENSIONS",
+        "kind": 5,
+        "importPath": "back.apps.gallery.serializers",
+        "description": "back.apps.gallery.serializers",
+        "peekOfCode": "ALLOWED_EXTENSIONS = {\n    \"jpg\",\n    \"jpeg\",\n    \"png\",\n    \"webp\",\n}\nclass MediaItemSerializer(serializers.ModelSerializer):\n    image_url = serializers.SerializerMethodField()\n    class Meta:\n        model = MediaItem",
+        "detail": "back.apps.gallery.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "back.apps.gallery.urls",
+        "description": "back.apps.gallery.urls",
+        "peekOfCode": "urlpatterns = [\n    path(\n        \"galleries/\",\n        gallery_list,\n        name=\"gallery-list\",\n    ),\n]",
+        "detail": "back.apps.gallery.urls",
+        "documentation": {}
+    },
+    {
+        "label": "gallery_list",
+        "kind": 2,
+        "importPath": "back.apps.gallery.views",
+        "description": "back.apps.gallery.views",
+        "peekOfCode": "def gallery_list(request):\n    if request.method == \"GET\":\n        galleries = Gallery.objects.filter(is_public=True) | Gallery.objects.filter(owner=request.user)\n        serializer = GallerySerializer(galleries.distinct(),many=True,context={\"request\": request})\n        return Response(serializer.data)\n    if request.method == \"POST\":\n        serializer = GallerySerializer(data=request.data,context={\"request\": request})\n        if serializer.is_valid():\n            serializer.save(owner=request.user)\n            return Response(serializer.data,status=status.HTTP_201_CREATED)",
+        "detail": "back.apps.gallery.views",
         "documentation": {}
     },
     {
@@ -901,20 +1183,11 @@
         "documentation": {}
     },
     {
-        "label": "Tour",
-        "kind": 6,
-        "importPath": "back.apps.tours.models",
-        "description": "back.apps.tours.models",
-        "peekOfCode": "class Tour(models.Model):\n    title = models.CharField(max_length=150,null=False,blank=False)\n    price = models.DecimalField(max_digits=10,decimal_places=2,validators=[MinValueValidator(Decimal(\"0.01\"))])\n    created_at = models.DateTimeField(auto_now_add=True)\n    updated_at = models.DateTimeField(auto_now=True)\n    def __str__(self):\n        return self.title\n=======\nclass Tour (models.Model):\n    title = models.CharField(max_length=100)",
-        "detail": "back.apps.tours.models",
-        "documentation": {}
-    },
-    {
         "label": "Tou",
         "kind": 6,
         "importPath": "back.apps.tours.models",
         "description": "back.apps.tours.models",
-        "peekOfCode": "class Tour (models.Model):\n    title = models.CharField(max_length=100)\n    price = models.DecimalField(max_digits=10, decimal_places=2,)\n    description = models.TextField()\n    created_at = models.DateTimeField(auto_now_add=True)\n    updated_at = models.DateTimeField(auto_now=True)\n>>>>>>> 71b31365928ca7575c0d322aebf156bb4fed5e98",
+        "peekOfCode": "class Tour (models.Model):\n    title = models.CharField(max_length=100)\n    price = models.DecimalField(max_digits=10, decimal_places=2,)\n    description = models.TextField()\n    created_at = models.DateTimeField(auto_now_add=True)\n    updated_at = models.DateTimeField(auto_now=True)",
         "detail": "back.apps.tours.models",
         "documentation": {}
     },
@@ -1256,7 +1529,7 @@
         "kind": 5,
         "importPath": "back.config.settings.base",
         "description": "back.config.settings.base",
-        "peekOfCode": "LANGUAGE_CODE = \"en-us\"\nTIME_ZONE = \"UTC\"\nUSE_I18N = True\nUSE_TZ = True\nSTATIC_URL = \"static/\"\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = \"media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nAUTH_USER_MODEL = \"users.CustomUser\"",
+        "peekOfCode": "LANGUAGE_CODE = \"en-us\"\nTIME_ZONE = \"UTC\"\nUSE_I18N = True\nUSE_TZ = True\nSTATIC_URL = \"static/\"\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = \"media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"\nMEDIA_URL = \"/media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"",
         "detail": "back.config.settings.base",
         "documentation": {}
     },
@@ -1265,7 +1538,7 @@
         "kind": 5,
         "importPath": "back.config.settings.base",
         "description": "back.config.settings.base",
-        "peekOfCode": "TIME_ZONE = \"UTC\"\nUSE_I18N = True\nUSE_TZ = True\nSTATIC_URL = \"static/\"\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = \"media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nAUTH_USER_MODEL = \"users.CustomUser\"",
+        "peekOfCode": "TIME_ZONE = \"UTC\"\nUSE_I18N = True\nUSE_TZ = True\nSTATIC_URL = \"static/\"\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = \"media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"\nMEDIA_URL = \"/media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"",
         "detail": "back.config.settings.base",
         "documentation": {}
     },
@@ -1274,7 +1547,7 @@
         "kind": 5,
         "importPath": "back.config.settings.base",
         "description": "back.config.settings.base",
-        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\nSTATIC_URL = \"static/\"\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = \"media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nAUTH_USER_MODEL = \"users.CustomUser\"",
+        "peekOfCode": "USE_I18N = True\nUSE_TZ = True\nSTATIC_URL = \"static/\"\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = \"media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"\nMEDIA_URL = \"/media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"",
         "detail": "back.config.settings.base",
         "documentation": {}
     },
@@ -1283,7 +1556,7 @@
         "kind": 5,
         "importPath": "back.config.settings.base",
         "description": "back.config.settings.base",
-        "peekOfCode": "USE_TZ = True\nSTATIC_URL = \"static/\"\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = \"media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nAUTH_USER_MODEL = \"users.CustomUser\"",
+        "peekOfCode": "USE_TZ = True\nSTATIC_URL = \"static/\"\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = \"media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"\nMEDIA_URL = \"/media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"",
         "detail": "back.config.settings.base",
         "documentation": {}
     },
@@ -1292,7 +1565,7 @@
         "kind": 5,
         "importPath": "back.config.settings.base",
         "description": "back.config.settings.base",
-        "peekOfCode": "STATIC_URL = \"static/\"\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = \"media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nAUTH_USER_MODEL = \"users.CustomUser\"",
+        "peekOfCode": "STATIC_URL = \"static/\"\nSTATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = \"media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"\nMEDIA_URL = \"/media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"",
         "detail": "back.config.settings.base",
         "documentation": {}
     },
@@ -1301,7 +1574,7 @@
         "kind": 5,
         "importPath": "back.config.settings.base",
         "description": "back.config.settings.base",
-        "peekOfCode": "STATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = \"media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nAUTH_USER_MODEL = \"users.CustomUser\"",
+        "peekOfCode": "STATIC_ROOT = BASE_DIR / \"staticfiles\"\nMEDIA_URL = \"media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"\nMEDIA_URL = \"/media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"",
         "detail": "back.config.settings.base",
         "documentation": {}
     },
@@ -1310,7 +1583,7 @@
         "kind": 5,
         "importPath": "back.config.settings.base",
         "description": "back.config.settings.base",
-        "peekOfCode": "MEDIA_URL = \"media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nAUTH_USER_MODEL = \"users.CustomUser\"",
+        "peekOfCode": "MEDIA_URL = \"media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"\nMEDIA_URL = \"/media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"",
         "detail": "back.config.settings.base",
         "documentation": {}
     },
@@ -1319,25 +1592,25 @@
         "kind": 5,
         "importPath": "back.config.settings.base",
         "description": "back.config.settings.base",
-        "peekOfCode": "MEDIA_ROOT = BASE_DIR / \"media\"\nDEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nAUTH_USER_MODEL = \"users.CustomUser\"",
+        "peekOfCode": "MEDIA_ROOT = BASE_DIR / \"media\"\nMEDIA_URL = \"/media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"",
         "detail": "back.config.settings.base",
         "documentation": {}
     },
     {
-        "label": "DEFAULT_AUTO_FIELD",
+        "label": "MEDIA_URL",
         "kind": 5,
         "importPath": "back.config.settings.base",
         "description": "back.config.settings.base",
-        "peekOfCode": "DEFAULT_AUTO_FIELD = \"django.db.models.BigAutoField\"\nAUTH_USER_MODEL = \"users.CustomUser\"",
+        "peekOfCode": "MEDIA_URL = \"/media/\"\nMEDIA_ROOT = BASE_DIR / \"media\"",
         "detail": "back.config.settings.base",
         "documentation": {}
     },
     {
-        "label": "AUTH_USER_MODEL",
+        "label": "MEDIA_ROOT",
         "kind": 5,
         "importPath": "back.config.settings.base",
         "description": "back.config.settings.base",
-        "peekOfCode": "AUTH_USER_MODEL = \"users.CustomUser\"",
+        "peekOfCode": "MEDIA_ROOT = BASE_DIR / \"media\"",
         "detail": "back.config.settings.base",
         "documentation": {}
     },
@@ -1355,7 +1628,7 @@
         "kind": 5,
         "importPath": "back.config.urls",
         "description": "back.config.urls",
-        "peekOfCode": "urlpatterns = [\n    path(\"admin/\", admin.site.urls),\n    path(\"api/contacts/\", include(\"apps.contacts.urls\")),\n    path(\"api/tours/\",include(\"apps.tours.urls\")),\n    path(\"api/reviews/\", include(\"apps.reviews.urls\")),\n    path(\"api/auth/\", include(\"apps.users.urls\")),\n    path(\"api/schema/\",SpectacularAPIView.as_view(),name=\"schema\",),\n    path(\"api/docs/\",SpectacularSwaggerView.as_view(url_name=\"schema\"),name=\"swagger-ui\",),\n    path(\"api/redoc/\",SpectacularRedocView.as_view(url_name=\"schema\"),name=\"redoc\",),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path(\"api/schema/\",SpectacularAPIView.as_view(),name=\"schema\",),\n    path(\"api/docs/\",SpectacularSwaggerView.as_view(url_name=\"schema\"),name=\"swagger-ui\",),\n    path(\"api/redoc/\",SpectacularRedocView.as_view(url_name=\"schema\"),name=\"redoc\",),\n]\nurlpatterns += static(\n    settings.MEDIA_URL,\n    document_root=settings.MEDIA_ROOT\n)",
         "detail": "back.config.urls",
         "documentation": {}
     },
@@ -1375,42 +1648,6 @@
         "description": "back.manage",
         "peekOfCode": "def main():\n    \"\"\"Run administrative tasks.\"\"\"\n    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings.dev')\n    try:\n        from django.core.management import execute_from_command_line\n    except ImportError as exc:\n        raise ImportError(\n            \"Couldn't import Django. Are you sure it's installed and \"\n            \"available on your PYTHONPATH environment variable? Did you \"\n            \"forget to activate a virtual environment?\"",
         "detail": "back.manage",
-        "documentation": {}
-    },
-    {
-        "label": "_Known",
-        "kind": 6,
-        "importPath": "front.node_modules.flatted.python.flatted",
-        "description": "front.node_modules.flatted.python.flatted",
-        "peekOfCode": "class _Known:\n    def __init__(self):\n        self.key = []\n        self.value = []\nclass _String:\n    def __init__(self, value):\n        self.value = value\ndef _array_keys(value):\n    for i in range(len(value)):\n        yield i",
-        "detail": "front.node_modules.flatted.python.flatted",
-        "documentation": {}
-    },
-    {
-        "label": "_String",
-        "kind": 6,
-        "importPath": "front.node_modules.flatted.python.flatted",
-        "description": "front.node_modules.flatted.python.flatted",
-        "peekOfCode": "class _String:\n    def __init__(self, value):\n        self.value = value\ndef _array_keys(value):\n    for i in range(len(value)):\n        yield i\ndef _object_keys(value):\n    for key in value:\n        yield key\ndef _is_array(value):",
-        "detail": "front.node_modules.flatted.python.flatted",
-        "documentation": {}
-    },
-    {
-        "label": "parse",
-        "kind": 2,
-        "importPath": "front.node_modules.flatted.python.flatted",
-        "description": "front.node_modules.flatted.python.flatted",
-        "peekOfCode": "def parse(value, *args, **kwargs):\n    json = _json.loads(value, *args, **kwargs)\n    wrapped = []\n    for value in json:\n        wrapped.append(_wrap(value))\n    input = []\n    for value in wrapped:\n        if isinstance(value, _String):\n            input.append(value.value)\n        else:",
-        "detail": "front.node_modules.flatted.python.flatted",
-        "documentation": {}
-    },
-    {
-        "label": "stringify",
-        "kind": 2,
-        "importPath": "front.node_modules.flatted.python.flatted",
-        "description": "front.node_modules.flatted.python.flatted",
-        "peekOfCode": "def stringify(value, *args, **kwargs):\n    known = _Known()\n    input = []\n    output = []\n    i = int(_index(known, input, value))\n    while i < len(input):\n        output.append(_transform(known, input, input[i]))\n        i += 1\n    return _json.dumps(output, *args, **kwargs)",
-        "detail": "front.node_modules.flatted.python.flatted",
         "documentation": {}
     }
 ]
