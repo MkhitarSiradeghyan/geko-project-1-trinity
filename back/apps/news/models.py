@@ -1,5 +1,11 @@
 from django.db import models
 
+class Tag(models.Model):
+    name = models.CharField(max_length=100, unique=True)
+
+    def __str__(self):
+        return self.name
+
 class Category(models.Model):
     name = models.CharField(max_length=150)
     slug = models.SlugField(max_length=180, unique=True)
@@ -12,7 +18,7 @@ class Category(models.Model):
     is_active = models.BooleanField(default=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-
+    tags = models.ManyToManyField(Tag, blank=True)
     class Meta:
         ordering = ["name"]
         verbose_name = "Category"
@@ -20,6 +26,8 @@ class Category(models.Model):
 
     def __str__(self):
         return self.name
+    
+
 
 
 class CategoryDetail(models.Model):
@@ -35,7 +43,7 @@ class CategoryDetail(models.Model):
         blank=True,
         null=True,
     )
-
+    tags = models.ManyToManyField(Tag, blank=True,)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
@@ -68,6 +76,7 @@ class Article(models.Model):
 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    tags = models.ManyToManyField(Tag, blank=True)
 
     class Meta:
         ordering = ["-created_at"]
@@ -97,6 +106,6 @@ class ArticleDetail(models.Model):
 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-
+    tags = models.ManyToManyField(Tag, blank=True)
     def __str__(self):
         return f"{self.article.title} details"
