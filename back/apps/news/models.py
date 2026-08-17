@@ -22,7 +22,7 @@ class Category(models.Model):
         return self.name
 
 
-class CategoryDetails(models.Model):
+class CategoryDetail(models.Model):
     category = models.OneToOneField(
         Category,
         on_delete=models.CASCADE,
@@ -76,7 +76,7 @@ class Article(models.Model):
         return self.title
 
 
-class ArticleDetails(models.Model):
+class ArticleDetail(models.Model):
     article = models.OneToOneField(
         Article,
         on_delete=models.CASCADE,

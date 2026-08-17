@@ -1,9 +1,9 @@
 from rest_framework import serializers
-from models import Category, CategoryDetails, Article, ArticleDetails
+from .models import Category, CategoryDetail, Article, ArticleDetail
 
 class CategoryDetailSerializer(serializers.ModelSerializer):
     class Meta:
-        model = CategoryDetails
+        model = CategoryDetail
         fields = "__all__"
 
 
@@ -25,14 +25,14 @@ class CategorySerializer(serializers.ModelSerializer):
         ]
 
 
-class ArticleDetailsSerializer(serializers.ModelSerializer):
+class ArticleDetailSerializer(serializers.ModelSerializer):
     class Meta:
-        model = ArticleDetails
+        model = ArticleDetail
         fields = "__all__"
 
 
 class ArticleSerializer(serializers.ModelSerializer):
-    details = ArticleDetailsSerializer(read_only=True)
+    details = ArticleDetailSerializer(read_only=True)
 
     class Meta:
         model = Article
