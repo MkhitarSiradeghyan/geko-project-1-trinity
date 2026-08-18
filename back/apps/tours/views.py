@@ -146,6 +146,16 @@ def tour_image_create(request, id):
 
     return Response(serializer.errors,status=status.HTTP_400_BAD_REQUEST)
 
+#Get Images 
+@api_view(["GET"])
+def images_list(request):
+
+    if request.method == "GET":
+        images = TourImage.objects.all()
+        serializer = TourImageSerializer(images, many=True)
+
+        return Response(serializer.data,status=status.HTTP_200_OK)
+
 
 #Delete image
 
