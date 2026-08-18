@@ -1,77 +1,36 @@
 @use "../abstracts/variables" as *
 @use "./fonts" as *
 
-$font-size-xs: 12px
-$font-size-sm: 14px
-$font-size-md: 16px
-$font-size-lg: 20px
-$font-size-xl: 24px
-$font-size-2xl: 32px
-$font-size-3xl: 40px
-$font-size-4xl: 48px
-
-$line-height-tight: 1.2
-$line-height-snug: 1.3
-$line-height-normal: 1.5
-$line-height-relaxed: 1.6
-
-$font-weight-regular: 400
-$font-weight-medium: 500
-$font-weight-semibold: 600
-$font-weight-bold: 700
-
 body
     font-family: $font-family-body-latin
-    font-size: $font-size-md
+    font-size: $font-size-base
     font-weight: $font-weight-regular
-    line-height: $line-height-normal
+    line-height: 1.5
     color: $color-text
     background-color: $color-background
 
 h1
     font-family: $font-family-heading-latin
-    font-size: $font-size-4xl
     font-weight: $font-weight-bold
-    line-height: $line-height-tight
+    line-height: 1.2
 
 h2
     font-family: $font-family-heading-latin
-    font-size: $font-size-3xl
     font-weight: $font-weight-bold
-    line-height: $line-height-tight
+    line-height: 1.25
 
 h3
     font-family: $font-family-heading-latin
-    font-size: $font-size-2xl
-    font-weight: $font-weight-semibold
-    line-height: $line-height-snug
+    font-weight: $font-weight-bold
+    line-height: 1.3
 
-h4
-    font-family: $font-family-heading-latin
-    font-size: $font-size-xl
-    font-weight: $font-weight-semibold
-    line-height: $line-height-snug
-
-h5
-    font-family: $font-family-heading-latin
-    font-size: $font-size-lg
-    font-weight: $font-weight-semibold
-    line-height: $line-height-snug
-
+h4,
+h5,
 h6
     font-family: $font-family-heading-latin
-    font-size: $font-size-md
     font-weight: $font-weight-semibold
-    line-height: $line-height-normal
-
-p
-    font-family: $font-family-body-latin
-    font-size: $font-size-md
-    font-weight: $font-weight-regular
-    line-height: $line-height-normal
+    line-height: 1.35
 
 small
-    font-family: $font-family-body-latin
     font-size: $font-size-sm
-    font-weight: $font-weight-regular
-    line-height: $line-height-normal
+    line-height: 1.4
