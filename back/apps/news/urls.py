@@ -1,5 +1,4 @@
 from django.urls import path
-
 from .views import category_list, category_detail, article_list, article_detail
 
 urlpatterns = [
