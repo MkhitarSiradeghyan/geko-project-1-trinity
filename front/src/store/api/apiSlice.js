@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 export const apiSlice = createApi({
   reducerPath: 'api',
   baseQuery: fetchBaseQuery({
-    baseUrl: 'http://localhost:8000/api/', // Backend-ի URL-ը
+    baseUrl: 'http://localhost:8000/api/',
     prepareHeaders: (headers, { getState }) => {
       const token = getState().auth?.token || localStorage.getItem('token');
       if (token) {
@@ -12,6 +12,6 @@ export const apiSlice = createApi({
       return headers;
     },
   }),
-  tagTypes: ['Tour', 'Booking', 'User', 'Contact', 'Gallery', 'Review'],
+  tagTypes: ['Tour', 'Booking', 'User', 'Contact', 'Gallery', 'Review', 'FAQ'],
   endpoints: () => ({}),
 });
