@@ -1,8 +1,0 @@
-{
-  "title": "Unsere Touren",
-  "priceFrom": "Ab {{price}}",
-  "resultsCount_one": "{{count}} Tour gefunden",
-  "resultsCount_other": "{{count}} Touren gefunden",
-  "duration_one": "{{count}} Tag",
-  "duration_other": "{{count}} Tage"
-}

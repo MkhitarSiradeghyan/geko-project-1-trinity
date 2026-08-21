@@ -1,8 +1,0 @@
-{
-  "title": "Մեր տուրերը",
-  "priceFrom": "Սկսած {{price}}-ից",
-  "resultsCount_one": "{{count}} տուր գտնվեց",
-  "resultsCount_other": "{{count}} տուր գտնվեց",
-  "duration_one": "{{count}} օր",
-  "duration_other": "{{count}} օր"
-}
