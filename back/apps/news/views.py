@@ -29,9 +29,9 @@ def category_list(request):
 
 
 @api_view(["GET", "PUT", "PATCH", "DELETE"])
-def category_detail(request, pk):
+def category_detail(request, slug ):
     try:
-        category = Category.objects.get(pk=pk)
+        category = Category.objects.get(slug=slug)
     except Category.DoesNotExist:
         return Response(
             {"detail": "Category not found."},
@@ -88,9 +88,9 @@ def article_list(request):
 
 
 @api_view(["GET", "PUT", "PATCH", "DELETE"])
-def article_detail(request, pk):
+def article_detail(request, slug):
     try:
-        article = Article.objects.get(pk=pk)
+        article = Article.objects.get(slug=slug)
     except Article.DoesNotExist:
         return Response(
             {"detail": "Article not found."},

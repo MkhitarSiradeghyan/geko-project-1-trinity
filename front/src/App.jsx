@@ -1,25 +1,16 @@
-import LanguageSwitcher from './components/LanguageSwitcher/LanguageSwitcher'
-import LanguageTest from './components/LanguageTest/LanguageTest'
+import { useGetArticlesQuery } from "./store/api/newsApi";
+import News from "./components/News/News";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-function App() {
-  return(
+const App = () => {
+ 
+  return (
+    <BrowserRouter>
     <Routes>
-      <Route path='/' element = {<Home />} />
-      <Route path='/About' element = {<About />} />
-      <Route path='/Tours' element = {<Tours />} />
-      <Route path='/TourDetails' element = {<TourDetails />} />
-      <Route path='/Gallery' element = {<Gallery />} />
-      <Route path='/News' element = {<News />} />
-      <Route path='/NewsDetails' element = {<NewsDetails />} />
-      <Route path='/Contacts' element = {<Contacts />} />
-      <Route path='/ThankYou' element = {<ThankYou />} />
-      <Route path='/Privacy' element = {<Privacy />} />
-      <Route path='/Terms' element = {<Terms />} />
-      
-      {/*404*/}
-      <Route path='*' element = {<NotFound />} />
+      <Route path="/News" element={<News />} />
     </Routes>
-  )
+    </BrowserRouter>
+  );
 }
 
 export default App
