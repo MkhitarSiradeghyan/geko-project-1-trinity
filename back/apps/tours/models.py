@@ -53,3 +53,11 @@ class Tour(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class TourImage(models.Model):
+    tour = models.ForeignKey(Tour,on_delete=models.CASCADE,related_name="images")
+    image = models.ImageField(upload_to="tours/")
+    is_main = models.BooleanField(default=False)
+
+
