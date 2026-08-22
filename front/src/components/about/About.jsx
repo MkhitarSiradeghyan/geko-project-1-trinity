@@ -1,5 +1,5 @@
 import React from 'react';
-import { useGetAboutInfoQuery } from '../store/api/aboutApi';
+import { useGetAboutInfoQuery } from '../../store/api/aboutApi';
 
 const About = () => {
   const { data: aboutData, isLoading, isError } = useGetAboutInfoQuery();
@@ -8,9 +8,9 @@ const About = () => {
   if (isError || !aboutData) return <div>Տվյալները ստանալիս սխալ է տեղի ունեցել:</div>;
 
   return (
-    <section className="about-page">
+    <section className="about-section">
       <div className="container">
-        <h1>{aboutData.title}</h1>
+        <h2>{aboutData.title}</h2>
         <p>{aboutData.description}</p>
       </div>
     </section>
