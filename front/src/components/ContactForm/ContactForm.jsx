@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useSubmitContactFormMutation } from '../../store/contactApi';
-import styles from './ContactForm.module.scss';
+import styles from './ContactForm.module.sass';
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
